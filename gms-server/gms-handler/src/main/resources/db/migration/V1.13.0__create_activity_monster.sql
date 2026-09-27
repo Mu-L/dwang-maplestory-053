@@ -39,7 +39,7 @@ CREATE TABLE `activity_monster_mob` (
 INSERT INTO `activity_monster_config`
   (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`)
 VALUES
-  ('SNAIL_ACTIVITY', 'org.gms.activity.GreenSnailEvent', '蜗牛活动', 1, 600, 6,
+  ('SNAIL_ACTIVITY', 'org.gms.activity.GreenSnailEvent', '蜗牛活动', 0, 600, 6,
    '【{event}】{monsters} 出现在了「{map}」，请速去攻略！',
    '玩家>10级；隐藏地图随机一张；蜗牛×5 + 红蜗牛×5；10分钟一轮，换图重刷');
 
@@ -64,7 +64,7 @@ INSERT INTO `drop_data` (`dropperid`, `itemid`, `minimum_quantity`, `maximum_qua
 INSERT INTO `drop_data` ( `dropperid`, `itemid`, `minimum_quantity`, `maximum_quantity`, `questid`, `chance`) VALUES ( 9400506, 4031305, 1, 1, 8801, 50000);
 
 
-INSERT INTO `activity_monster_config` (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`) VALUES ('Anniversary_ACTIVITY', 'org.gms.activity.Anniversary1stEvent', '一周年活动', 1, 300, 6, '【{event}】{monsters} 出现在了「{map}」，请速去攻略！', '玩家进行一周年活动，换图重刷');
+INSERT INTO `activity_monster_config` (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`) VALUES ('Anniversary_ACTIVITY', 'org.gms.activity.Anniversary1stEvent', '一周年活动', 1, 600, 6, '【{event}】{monsters} 出现在了「{map}」，请速去攻略！', '玩家进行一周年活动，换图重刷');
 SET @current_activity_monster_id = LAST_INSERT_ID();
 
 INSERT INTO `activity_monster_mob` (`config_id`, `mob_id`, `spawn_count`, `sort_order`) VALUES (@current_activity_monster_id, 9400506, 10, 0);
@@ -85,7 +85,7 @@ INSERT INTO `drop_data` (`dropperid`, `itemid`, `minimum_quantity`, `maximum_qua
 --   蜡烛
 INSERT INTO `drop_data` ( `dropperid`, `itemid`, `minimum_quantity`, `maximum_quantity`, `questid`, `chance`) VALUES ( 9400513, 4031590, 1, 1, 8881, 50000);
 
-INSERT INTO `activity_monster_config` (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`) VALUES ('Anniversary_ACTIVITY2', 'org.gms.activity.Anniversary2stEvent', '二周年活动', 1, 300, 6, '【{event}】{monsters} 出现在了「{map}」，请速去攻略！', '玩家进行一周年活动，换图重刷');
+INSERT INTO `activity_monster_config` (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`) VALUES ('Anniversary_ACTIVITY2', 'org.gms.activity.Anniversary2stEvent', '二周年活动', 1, 600, 6, '【{event}】{monsters} 出现在了「{map}」，请速去攻略！', '玩家进行一周年活动，换图重刷');
 SET @current_activity_monster_id = LAST_INSERT_ID();
 
 INSERT INTO `activity_monster_mob` (`config_id`, `mob_id`, `spawn_count`, `sort_order`) VALUES (@current_activity_monster_id, 9400513, 10, 0);
@@ -146,4 +146,4 @@ INSERT INTO `drop_data` (`dropperid`, `itemid`, `minimum_quantity`, `maximum_qua
 -- 新增盛大易宝掉落
 INSERT INTO drop_data_global (continent, itemid, minimum_quantity, maximum_quantity, questid, chance, comments)
 VALUES
-(- 1, 4031250, 1, 1, 0, 200000, 'NX Card 500 PTS');
+(- 1, 4031250, 1, 1, 0, 100000, 'NX Card 500 PTS');
