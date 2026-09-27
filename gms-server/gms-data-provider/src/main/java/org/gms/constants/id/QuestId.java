@@ -143,12 +143,12 @@ public class QuestId {
     public static final int TO_LITH_HARBOR_1028 = 1028;
 
     /**
-     * [Sam's Advice]
+     * [山姆的建议]
      */
     public static final int SAM_S_ADVICE_1029 = 1029;
 
     /**
-     * [Maria's Map Reading]
+     * [玛丽亚教看地图]
      */
     public static final int MARIA_S_MAP_READING_1030 = 1030;
 
@@ -2548,87 +2548,87 @@ public class QuestId {
     public static final int WELCOME_TO_NEW_LEAF_CITY_QUIZ_END_4923 = 4923;
 
     /**
-     * [Brand Materia - Brand Materia]
+     * [烙印玛特里亚 - 烙印玛特里亚]
      */
     public static final int BRAND_MATERIA_4924 = 4924;
 
     /**
-     * [Brand Materia - Brand Materia Continued]
+     * [烙印玛特里亚 - 烙印玛特里亚后续]
      */
     public static final int BRAND_MATERIA_CONTINUED_4925 = 4925;
 
     /**
-     * [Interstellar Relics]
+     * [星际遗物]
      */
     public static final int INTERSTELLAR_RELICS_4926 = 4926;
 
     /**
-     * [Ancient Artifacts]
+     * [古代遗物]
      */
     public static final int ANCIENT_ARTIFACTS_4927 = 4927;
 
     /**
-     * [Jay's Curiosity]
+     * [杰伊的好奇心]
      */
     public static final int JAY_S_CURIOSITY_4928 = 4928;
 
     /**
-     * [Gwin's Thanks]
+     * [葛温的道谢]
      */
     public static final int GWIN_S_THANKS_4929 = 4929;
 
     /**
-     * [The Rememberer's Passion - The Rememberer's Passion Part 1]
+     * [记忆者的热情 - 记忆者的热情 第1部]
      */
     public static final int THE_REMEMBERER_S_PASSION_PART_1_4930 = 4930;
 
     /**
-     * [The Rememberer's Passion - The Rememberer's Passion Part 2]
+     * [记忆者的热情 - 记忆者的热情 第2部]
      */
     public static final int THE_REMEMBERER_S_PASSION_PART_2_4931 = 4931;
 
     /**
-     * [Grendel The Really Old's Glorious Days]
+     * [汉斯的辉煌岁月]
      */
     public static final int GRENDEL_THE_REALLY_OLD_S_GLORIOUS_DAYS_4932 = 4932;
 
     /**
-     * [Cody's Confession]
+     * [科迪的坦白]
      */
     public static final int CODY_S_CONFESSION_4933 = 4933;
 
     /**
-     * [Manji's Approval]
+     * [曼吉的认可]
      */
     public static final int MANJI_S_APPROVAL_4934 = 4934;
 
     /**
-     * [Blackbull's Mistake]
+     * [布莱克布尔的失误]
      */
     public static final int BLACKBULL_S_MISTAKE_4935 = 4935;
 
     /**
-     * [Bruce's Research]
+     * [布鲁斯的研究]
      */
     public static final int BRUCE_S_RESEARCH_4936 = 4936;
 
     /**
-     * [Dances with Balrog's Barbarism - Dances with Balrog's Barbarism Part 1]
+     * [与巴洛古共舞的野蛮行径 - 与巴洛古共舞的野蛮行径 第1部]
      */
     public static final int DANCES_WITH_BALROG_S_BARBARISM_PART_1_4937 = 4937;
 
     /**
-     * [Dances with Balrog's Barbarism - Dances with Balrog's Barbarism Part 2]
+     * [与巴洛古共舞的野蛮行径 - 与巴洛古共舞的野蛮行径 第2部]
      */
     public static final int DANCES_WITH_BALROG_S_BARBARISM_PART_2_4938 = 4938;
 
     /**
-     * [Winston's Scheme - Winston's Scheme Part 1]
+     * [温斯顿的阴谋 - 温斯顿的阴谋 第1部]
      */
     public static final int WINSTON_S_SCHEME_PART_1_4939 = 4939;
 
     /**
-     * [Winston's Scheme - Winston's Scheme Part 2]
+     * [温斯顿的阴谋 - 温斯顿的阴谋 第2部]
      */
     public static final int WINSTON_S_SCHEME_PART_2_4940 = 4940;
 
@@ -2728,217 +2728,217 @@ public class QuestId {
     public static final int THE_FILE_THICKENS_PART_2_4959 = 4959;
 
     /**
-     * [Eat This!]
+     * [吃这个！]
      */
     public static final int EAT_THIS_4960 = 4960;
 
     /**
-     * [Smores No More]
+     * [烤棉花糖失窃案]
      */
     public static final int SMORES_NO_MORE_4962 = 4962;
 
     /**
-     * [Dinner Fixins']
+     * [感恩节配菜]
      */
     public static final int DINNER_FIXINS_4963 = 4963;
 
     /**
-     * [Game On! <CVS>]
+     * [游戏点卡！<CVS>]
      */
     public static final int GAME_ON_CVS_4964 = 4964;
 
     /**
-     * [Game On! <Target>]
+     * [游戏点卡！<Target>]
      */
     public static final int GAME_ON_TARGET_4965 = 4965;
 
     /**
-     * [Game On! <Duane Reade>]
+     * [游戏点卡！<Duane Reade>]
      */
     public static final int GAME_ON_DUANE_READE_4966 = 4966;
 
     /**
-     * [Game On! <7-Eleven>]
+     * [游戏点卡！<7-Eleven>]
      */
     public static final int GAME_ON_7_ELEVEN_4967 = 4967;
 
     /**
-     * [Game On! <Rite Aid>]
+     * [游戏点卡！<Rite Aid>]
      */
     public static final int GAME_ON_RITE_AID_4968 = 4968;
 
     /**
-     * [Game On! <Best Buy>]
+     * [游戏点卡！<Best Buy>]
      */
     public static final int GAME_ON_BEST_BUY_4969 = 4969;
 
     /**
-     * [Game On! <CVS> 2]
+     * [游戏点卡！<CVS> 2]
      */
     public static final int GAME_ON_CVS_2_4970 = 4970;
 
     /**
-     * [Game On! <CVS> 3]
+     * [游戏点卡！<CVS> 3]
      */
     public static final int GAME_ON_CVS_3_4971 = 4971;
 
     /**
-     * [Game On! <CVS> 4]
+     * [游戏点卡！<CVS> 4]
      */
     public static final int GAME_ON_CVS_4_4972 = 4972;
 
     /**
-     * [Game On! <CVS> 5]
+     * [游戏点卡！<CVS> 5]
      */
     public static final int GAME_ON_CVS_5_4973 = 4973;
 
     /**
-     * [Game On! <Target> 2]
+     * [游戏点卡！<Target> 2]
      */
     public static final int GAME_ON_TARGET_2_4974 = 4974;
 
     /**
-     * [Game On! <Target> 3]
+     * [游戏点卡！<Target> 3]
      */
     public static final int GAME_ON_TARGET_3_4975 = 4975;
 
     /**
-     * [Game On! <Target> 4]
+     * [游戏点卡！<Target> 4]
      */
     public static final int GAME_ON_TARGET_4_4976 = 4976;
 
     /**
-     * [Game On! <Target> 5]
+     * [游戏点卡！<Target> 5]
      */
     public static final int GAME_ON_TARGET_5_4977 = 4977;
 
     /**
-     * [Game On! <7-Eleven> 2]
+     * [游戏点卡！<7-Eleven> 2]
      */
     public static final int GAME_ON_7_ELEVEN_2_4978 = 4978;
 
     /**
-     * [Game On! <7-Eleven> 3]
+     * [游戏点卡！<7-Eleven> 3]
      */
     public static final int GAME_ON_7_ELEVEN_3_4979 = 4979;
 
     /**
-     * [Game On! <7-Eleven> 4]
+     * [游戏点卡！<7-Eleven> 4]
      */
     public static final int GAME_ON_7_ELEVEN_4_4980 = 4980;
 
     /**
-     * [Game On! <7-Eleven> 5]
+     * [游戏点卡！<7-Eleven> 5]
      */
     public static final int GAME_ON_7_ELEVEN_5_4981 = 4981;
 
     /**
-     * [Game On! <Rite Aid> 2]
+     * [游戏点卡！<Rite Aid> 2]
      */
     public static final int GAME_ON_RITE_AID_2_4982 = 4982;
 
     /**
-     * [Game On! <Rite Aid> 3]
+     * [游戏点卡！<Rite Aid> 3]
      */
     public static final int GAME_ON_RITE_AID_3_4983 = 4983;
 
     /**
-     * [Game On! <Rite Aid> 4]
+     * [游戏点卡！<Rite Aid> 4]
      */
     public static final int GAME_ON_RITE_AID_4_4984 = 4984;
 
     /**
-     * [Game On! <Rite Aid> 5]
+     * [游戏点卡！<Rite Aid> 5]
      */
     public static final int GAME_ON_RITE_AID_5_4985 = 4985;
 
     /**
-     * [Game On! <Best Buy> 2]
+     * [游戏点卡！<Best Buy> 2]
      */
     public static final int GAME_ON_BEST_BUY_2_4986 = 4986;
 
     /**
-     * [Game On! <Best Buy> 3]
+     * [游戏点卡！<Best Buy> 3]
      */
     public static final int GAME_ON_BEST_BUY_3_4987 = 4987;
 
     /**
-     * [Game On! <Best Buy> 4]
+     * [游戏点卡！<Best Buy> 4]
      */
     public static final int GAME_ON_BEST_BUY_4_4988 = 4988;
 
     /**
-     * [Game On! <Best Buy> 5]
+     * [游戏点卡！<Best Buy> 5]
      */
     public static final int GAME_ON_BEST_BUY_5_4989 = 4989;
 
     /**
-     * [Game On! <Duane Reade> 2]
+     * [游戏点卡！<Duane Reade> 2]
      */
     public static final int GAME_ON_DUANE_READE_2_4990 = 4990;
 
     /**
-     * [Game On! <Duane Reade> 3]
+     * [游戏点卡！<Duane Reade> 3]
      */
     public static final int GAME_ON_DUANE_READE_3_4991 = 4991;
 
     /**
-     * [Game On! <Duane Reade> 4]
+     * [游戏点卡！<Duane Reade> 4]
      */
     public static final int GAME_ON_DUANE_READE_4_4992 = 4992;
 
     /**
-     * [Game On! <Duane Reade> 5]
+     * [游戏点卡！<Duane Reade> 5]
      */
     public static final int GAME_ON_DUANE_READE_5_4993 = 4993;
 
     /**
-     * [Little Suzy's X-Mas Dilemma]
+     * [小苏西的圣诞烦恼]
      */
     public static final int LITTLE_SUZY_S_X_MAS_DILEMMA_4994 = 4994;
 
     /**
-     * [The Spirit of Maplemas]
+     * [枫叶节精神]
      */
     public static final int THE_SPIRIT_OF_MAPLEMAS_4995 = 4995;
 
     /**
-     * [A Versal Tradition]
+     * [维萨尔节的传统]
      */
     public static final int A_VERSAL_TRADITION_4996 = 4996;
 
     /**
-     * [A Very Merry Maplemas]
+     * [快乐的枫叶节]
      */
     public static final int A_VERY_MERRY_MAPLEMAS_4997 = 4997;
 
     /**
-     * [Happy Versalmas to You]
+     * [祝你维萨尔节快乐]
      */
     public static final int HAPPY_VERSALMAS_TO_YOU_4998 = 4998;
 
     /**
-     * [Elpam's Gift]
+     * [埃尔帕姆的礼物]
      */
     public static final int ELPAM_S_GIFT_4999 = 4999;
 
     /**
-     * [交换白色的礼物盒]
+     * [交换紫色的礼物盒]
      */
     public static final int GIANT_SWOWMAN_S_PURPLE_BOX_5009 = 5009;
 
     /**
-     * [交换红色的礼物盒]
+     * [交换蓝色的礼物盒]
      */
     public static final int GIANT_SNOWMAN_S_BLUE_BOX_5010 = 5010;
 
     /**
-     * [交换紫色的礼物盒]
+     * [交换红色的礼物盒]
      */
     public static final int GIANT_SNOWMAN_S_RED_BOX_5011 = 5011;
 
     /**
-     * [交换蓝色的礼物盒]
+     * [交换白色的礼物盒]
      */
     public static final int GIANT_SNOWMAN_S_WHITE_BOX_5012 = 5012;
 
@@ -3733,7 +3733,7 @@ public class QuestId {
     public static final int VALENTINE_S_DAY_CHOCOLATE_BASKET_8207 = 8207;
 
     /**
-     * [Ancient Artifacts]
+     * [古代遗物]
      */
     public static final int ANCIENT_ARTIFACTS_8213 = 8213;
 
@@ -3748,37 +3748,37 @@ public class QuestId {
     public static final int QUEST_2006_EASTER_MAD_BUNNY_S_EASTER_YELLOW_8701 = 8701;
 
     /**
-     * [2006 Easter : Mad Bunny's Easter(Green)]
+     * [疯兔子的复活节（绿）]
      */
     public static final int QUEST_2006_EASTER_MAD_BUNNY_S_EASTER_GREEN_8713 = 8713;
 
     /**
-     * [Anniversary : Birthday Present (Red)]
+     * [周年庆：生日礼物（红）]
      */
     public static final int ANNIVERSARY_BIRTHDAY_PRESENT_RED_8800 = 8800;
 
     /**
-     * [Anniversary : Cody's Quest]
+     * [周年庆：科迪的任务]
      */
     public static final int ANNIVERSARY_CODY_S_QUEST_8801 = 8801;
 
     /**
-     * [Anniversary : Birthday Present (Blue)]
+     * [周年庆：生日礼物（蓝）]
      */
     public static final int ANNIVERSARY_BIRTHDAY_PRESENT_BLUE_8802 = 8802;
 
     /**
-     * [Independence Day : Cody's Barbecue Party]
+     * [独立日：科迪的烧烤派对]
      */
     public static final int INDEPENDENCE_DAY_CODY_S_BARBECUE_PARTY_8804 = 8804;
 
     /**
-     * [Independence Day : Alien Invasion]
+     * [独立日：外星人入侵]
      */
     public static final int INDEPENDENCE_DAY_ALIEN_INVASION_8805 = 8805;
 
     /**
-     * [Nanuke and the Chair]
+     * [纳努科和椅子]
      */
     public static final int NANUKE_AND_THE_CHAIR_8806 = 8806;
 
@@ -3798,27 +3798,27 @@ public class QuestId {
     public static final int THANKSGIVING_PUMPKIN_PIE_8823 = 8823;
 
     /**
-     * [Festival of Lights - Festival of Lights - Building the Altar]
+     * [光明节 - 光明节 - 建造祭坛]
      */
     public static final int FESTIVAL_OF_LIGHTS_BUILDING_THE_ALTAR_8829 = 8829;
 
     /**
-     * [Festival of Lights - Festival of Lights - Blessing the Festival ]
+     * [光明节 - 光明节 - 祝福庆典]
      */
     public static final int FESTIVAL_OF_LIGHTS_BLESSING_THE_FESTIVAL_8830 = 8830;
 
     /**
-     * [Graham Cracked]
+     * [奇巧先生的饼干屋]
      */
     public static final int GRAHAM_CRACKED_8832 = 8832;
 
     /**
-     * [New Year : New Year's Wishes - New Year's Wishes 1]
+     * [新年：新年心愿 - 新年心愿 1]
      */
     public static final int NEW_YEAR_S_WISHES_1_8833 = 8833;
 
     /**
-     * [New Year : New Year's Wishes - New Year's Wishes 2]
+     * [新年：新年心愿 - 新年心愿 2]
      */
     public static final int NEW_YEAR_S_WISHES_2_8834 = 8834;
 
@@ -4008,47 +4008,47 @@ public class QuestId {
     public static final int TEO_S_REMINISCENCE_9011 = 9011;
 
     /**
-     * [Beat the Heat <Easy> - Beat the Heat <Easy> - 1st Stage]
+     * [战胜酷暑 <简单> - 战胜酷暑 <简单> - 第1阶段]
      */
     public static final int BEAT_THE_HEAT_EASY_1ST_STAGE_9051 = 9051;
 
     /**
-     * [Beat the Heat <Easy> - Beat the Heat <Easy> - 2nd Stage]
+     * [战胜酷暑 <简单> - 战胜酷暑 <简单> - 第2阶段]
      */
     public static final int BEAT_THE_HEAT_EASY_2ND_STAGE_9052 = 9052;
 
     /**
-     * [Beat the Heat <Easy> - Beat the Heat <Easy> - 3rd Stage]
+     * [战胜酷暑 <简单> - 战胜酷暑 <简单> - 第3阶段]
      */
     public static final int BEAT_THE_HEAT_EASY_3RD_STAGE_9053 = 9053;
 
     /**
-     * [Beat the Heat <Medium> - Beat the Heat <Medium>-1st Stage]
+     * [战胜酷暑 <中等> - 战胜酷暑 <中等> - 第1阶段]
      */
     public static final int BEAT_THE_HEAT_MEDIUM_1ST_STAGE_9054 = 9054;
 
     /**
-     * [Beat the Heat <Medium> - Beat the Heat <Medium> - 2nd Stage]
+     * [战胜酷暑 <中等> - 战胜酷暑 <中等> - 第2阶段]
      */
     public static final int BEAT_THE_HEAT_MEDIUM_2ND_STAGE_9055 = 9055;
 
     /**
-     * [Beat the Heat <Medium> - Beat the Heat <Medium> - 3rd Stage]
+     * [战胜酷暑 <中等> - 战胜酷暑 <中等> - 第3阶段]
      */
     public static final int BEAT_THE_HEAT_MEDIUM_3RD_STAGE_9056 = 9056;
 
     /**
-     * [Beat the Heat <Hard> - Beat the Heat <Hard>-1st Stage]
+     * [战胜酷暑 <困难> - 战胜酷暑 <困难>-第1阶段]
      */
     public static final int BEAT_THE_HEAT_HARD_1ST_STAGE_9057 = 9057;
 
     /**
-     * [Beat the Heat <Hard> - Beat the Heat <Hard> - 2nd Stage]
+     * [战胜酷暑 <困难> - 战胜酷暑 <困难> - 第2阶段]
      */
     public static final int BEAT_THE_HEAT_HARD_2ND_STAGE_9058 = 9058;
 
     /**
-     * [Beat the Heat <Hard> - Beat the Heat <Hard> - 3rd Stage]
+     * [战胜酷暑 <困难> - 战胜酷暑 <困难> - 第3阶段]
      */
     public static final int BEAT_THE_HEAT_HARD_3RD_STAGE_9059 = 9059;
 
@@ -4063,7 +4063,7 @@ public class QuestId {
     public static final int VALENTINE_S_DAY_HEART_CHOCOLATE_9310 = 9310;
 
     /**
-     * [Valentine's Day : Chocolate Basket]
+     * [情人节：巧克力篮]
      */
     public static final int VALENTINE_S_DAY_CHOCOLATE_BASKET_9311 = 9311;
 

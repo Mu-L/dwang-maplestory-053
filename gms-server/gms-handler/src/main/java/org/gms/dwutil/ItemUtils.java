@@ -32,6 +32,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.*;
 
+
 /**
  * 校验item用于解耦
  *
@@ -356,6 +357,24 @@ public class ItemUtils {
         Item petz = owner.getInventory(InventoryType.CASH).getItem(pet.getPosition());
         if (petz != null) {
             owner.forceUpdateItem(petz);
+        }
+    }
+
+    /**
+     * 获取单个
+     * @param itemId
+     * @return
+     */
+    public static int getNXSingle(int itemId) {
+        switch (itemId){
+            case ItemId.NX_CARD_100:
+                return 100;
+            case ItemId.NX_CARD_250:
+                return 250;
+            case ItemId.NX_CARD_500:
+                return 500;
+            default:
+                return 0;
         }
     }
 

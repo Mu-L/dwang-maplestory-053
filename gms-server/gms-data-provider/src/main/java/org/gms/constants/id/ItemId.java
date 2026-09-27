@@ -307,8 +307,13 @@ public class ItemId {
     public static final int NX_CARD_100 = 4031865;
     public static final int NX_CARD_250 = 4031866;
 
+    /**
+     * 盛大易宝
+     */
+    public static final int NX_CARD_500 = 4031250;
+
     public static boolean isNxCard(int itemId) {
-        return itemId == NX_CARD_100 || itemId == NX_CARD_250;
+        return itemId == NX_CARD_100 || itemId == NX_CARD_250 || itemId == NX_CARD_500;
     }
 
     public static boolean isCashPackage(int itemId) {
