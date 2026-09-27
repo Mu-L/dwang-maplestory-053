@@ -3738,12 +3738,12 @@ public class QuestId {
     public static final int ANCIENT_ARTIFACTS_8213 = 8213;
 
     /**
-     * [情比金坚之真心考验(1)]
+     * [疯兔子的复活节篮子]
      */
     public static final int QUEST_2006_EASTER_EASTER_BASKET_8700 = 8700;
 
     /**
-     * [情比金坚之真心考验(2)]
+     * [疯兔子的复活节黄]
      */
     public static final int QUEST_2006_EASTER_MAD_BUNNY_S_EASTER_YELLOW_8701 = 8701;
 
@@ -3956,6 +3956,12 @@ public class QuestId {
      * [复活节：疯兔子的复活节（绿色）]
      */
     public static final int EASTER_MAD_BUNNY_S_EASTER_GREEN_8875 = 8875;
+
+
+    /**
+     * [复活节：黄金蛋]
+     */
+    public static final int EASTER_MAD_BUNNY_S_EASTER_GREEN_8876 = 8876;
 
     /**
      * [2周年庆：生日礼物（红色）]
