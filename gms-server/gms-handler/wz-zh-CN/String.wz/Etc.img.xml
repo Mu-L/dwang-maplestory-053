@@ -834,40 +834,40 @@
             <string name="name" value="马头骨"/>
         </imgdir>
         <imgdir name="4000209">
-            <string name="desc" value="The bell of Co-ke Slime that has been taken off."/>
-            <string name="name" value="Co-ke Slime’s Bell"/>
+            <string name="desc" value="从可乐史莱姆身上取下的铃铛。"/>
+            <string name="name" value="可乐史莱姆的铃铛"/>
         </imgdir>
         <imgdir name="4000210">
-            <string name="desc" value="A piece of Co-ke Pig’s ribbon."/>
-            <string name="name" value="Co-ke Pig’s Ribbon"/>
+            <string name="desc" value="可乐猪身上的一段蝴蝶结。"/>
+            <string name="name" value="可乐猪的蝴蝶结"/>
         </imgdir>
         <imgdir name="4000211">
-            <string name="desc" value="A cube with a drawing of a Coca-Cola bottle on it."/>
-            <string name="name" value="Coca-Cola Cube"/>
+            <string name="desc" value="印有可口可乐瓶图案的方块。"/>
+            <string name="name" value="可口可乐方块"/>
         </imgdir>
         <imgdir name="4000212">
-            <string name="desc" value="A cube with the CokePLAY symbol."/>
-            <string name="name" value="CokePLAY Cube"/>
+            <string name="desc" value="带有CokePLAY标志的方块。"/>
+            <string name="name" value="CokePLAY方块"/>
         </imgdir>
         <imgdir name="4000213">
-            <string name="desc" value="A card with a drawing of Coca-Cola."/>
-            <string name="name" value="Coca-Cola Card"/>
+            <string name="desc" value="印有可口可乐图案的卡片。"/>
+            <string name="name" value="可口可乐卡片"/>
         </imgdir>
         <imgdir name="4000214">
-            <string name="desc" value="A red gem with a Coca-Cola logo engraved on it."/>
-            <string name="name" value="Coca-Cola Gem"/>
+            <string name="desc" value="刻有可口可乐标志的红色宝石。"/>
+            <string name="name" value="可口可乐宝石"/>
         </imgdir>
         <imgdir name="4000215">
             <string name="desc" value="插在树桩上的斧头。"/>
             <string name="name" value="斧头"/>
         </imgdir>
         <imgdir name="4000216">
-            <string name="desc" value="An empty can that had been filled with the sweet and tangy Coca-Cola."/>
-            <string name="name" value="Coca-Cola Can"/>
+            <string name="desc" value="曾装满香甜可口可乐的空罐。"/>
+            <string name="name" value="可口可乐空罐"/>
         </imgdir>
         <imgdir name="4000217">
-            <string name="desc" value="An empty can that had been filled with Coke Light, a drink with zero calories."/>
-            <string name="name" value="Coca-Cola Light Can"/>
+            <string name="desc" value="曾装满零卡路里健怡可乐的空罐。"/>
+            <string name="name" value="健怡可口可乐空罐"/>
         </imgdir>
         <imgdir name="4000218">
             <string name="desc" value="冻得像冰一样的背壳。"/>
@@ -876,15 +876,15 @@
         <imgdir name="4000219">
             <string name="desc"
                     value="A block that had been part of the hard body of a Coke Golem. It looks like frozen Cola."/>
-            <string name="name" value="Coke Ice Block"/>
+            <string name="name" value="可乐冰块"/>
         </imgdir>
         <imgdir name="4000220">
             <string name="desc" value="冰巨人身体的一部分积木。"/>
             <string name="name" value="冰积木"/>
         </imgdir>
         <imgdir name="4000221">
-            <string name="desc" value="A bottle lid that a Coke Mushroom used to wear on its head."/>
-            <string name="name" value="Coke Bottle Lid"/>
+            <string name="desc" value="可乐蘑菇曾戴在头上的瓶盖。"/>
+            <string name="name" value="可乐瓶盖"/>
         </imgdir>
         <imgdir name="4000222">
             <string name="desc" value="是提灯。"/>
@@ -1099,8 +1099,8 @@
             <string name="name" value="断裂的角"/>
         </imgdir>
         <imgdir name="4000275">
-            <string name="name" value="Broken Horn"/>
-            <string name="desc" value="A horn that used to adorn the head of Skelegon. It&apos;s now broken off."/>
+            <string name="name" value="断裂的角"/>
+            <string name="desc" value="曾装饰在骷髅龙头上的角，现在已经断裂。"/>
         </imgdir>
         <imgdir name="4000276">
             <string name="desc" value="松鼠滚着玩的栗子"/>
@@ -1888,7 +1888,7 @@
         <imgdir name="4000492">
             <string name="desc"
                     value="A certificate that certifies one as a great tester. The more the certificate, the better the chance of being selected as a Great Tester."/>
-            <string name="name" value="Certificate of Great Tester"/>
+            <string name="name" value="优秀测试员证书"/>
         </imgdir>
         <imgdir name="4000493">
             <string name="desc" value="雪精灵的毛团。白色冰冷的一团\n毛。"/>
@@ -1949,75 +1949,75 @@
         <imgdir name="4000508">
             <string name="desc"
                     value="An artifact in which the Miwok tribe has sealed their treasure. Purchase an Enchanted Scroll at the Cash Shop in order to release the seal and retrieve the treasure, and take it to NPC Toh Relicseeker. "/>
-            <string name="name" value="Miwok Artifact"/>
+            <string name="name" value="米沃克神器"/>
         </imgdir>
         <imgdir name="4000509">
             <string name="desc"
                     value="The Old Tree Branch that the Wise One from the Miwok tribe used to predict the future. Kopee Relicseeker says she can make the legendary ring using the tree branch."/>
-            <string name="name" value="Old Tree Branch of the Wise One"/>
+            <string name="name" value="智者的老树枝"/>
         </imgdir>
         <imgdir name="4000510">
             <string name="desc"
                     value="The Bluejay Feather that the Wise One from the Miwok tribe used to predict the future. Kopee Relicseeker says she can make the legendary ring using the feather."/>
-            <string name="name" value="Bluejay Feather of the Wise One"/>
+            <string name="name" value="智者的蓝松鸦羽毛"/>
         </imgdir>
         <imgdir name="4000511">
             <string name="desc"
                     value="The Red Bird Feather that the Wise One from the Miwok tribe used to predict the future. Kopee Relicseeker says she can make the legendary ring using the feather."/>
-            <string name="name" value="Red Bird Feather of the Wise One"/>
+            <string name="name" value="智者的红鸟羽毛"/>
         </imgdir>
         <imgdir name="4000512">
             <string name="desc"
                     value="The cat eye with which the Brave One from the Miwok tribe equipped himself in battles. Kopee Relicseeker says she can make the legendary ring using the cat eye."/>
-            <string name="name" value="Cat Eye of the Brave One"/>
+            <string name="name" value="勇者的猫眼石"/>
         </imgdir>
         <imgdir name="4000513">
             <string name="desc"
                     value="The buffalo horn with which the Brave One from the Miwok tribe equipped himself in battles. Kopee Relicseeker says she can make the legendary ring using the horn."/>
-            <string name="name" value="Buffalo Horns of the Brave One"/>
+            <string name="name" value="勇者的水牛角"/>
         </imgdir>
         <imgdir name="4000514">
             <string name="desc"
                     value="The puma bone with which the Brave One from the Miwok tribe equipped himself in battles. Kopee Relicseeker says she can make the legendary ring using the puma bones."/>
-            <string name="name" value="Puma Bones of the Brave One"/>
+            <string name="name" value="勇者的美洲狮骨头"/>
         </imgdir>
         <imgdir name="4000515">
-            <string name="desc" value="Aramia&apos;s Book-Drive Book"/>
-            <string name="name" value="Aramia&apos;s Book"/>
+            <string name="desc" value="阿拉米亚的书驱动书。"/>
+            <string name="name" value="阿拉米亚的书"/>
         </imgdir>
         <imgdir name="4000517">
-            <string name="desc" value="Sophilia&apos;s Favorite Doll"/>
-            <string name="name" value="Sophilia&apos;s Favorite Doll"/>
+            <string name="desc" value="索菲利亚最喜欢的娃娃。"/>
+            <string name="name" value="索菲莉亚最喜欢的娃娃"/>
         </imgdir>
         <imgdir name="4000518">
-            <string name="desc" value="A key that looks like it can unlock the doors inside the Haunted Mansion."/>
-            <string name="name" value="Haunted Mansion Gold Key"/>
+            <string name="desc" value="看起来可以打开鬼屋内房门的钥匙。"/>
+            <string name="name" value="鬼屋金钥匙"/>
         </imgdir>
         <imgdir name="4000519">
-            <string name="desc" value="A key that looks like it can unlock the doors inside the Haunted Mansion."/>
-            <string name="name" value="Haunted Mansion Silver Key"/>
+            <string name="desc" value="看起来可以打开鬼屋内房门的钥匙。"/>
+            <string name="name" value="鬼屋银钥匙"/>
         </imgdir>
         <imgdir name="4000520">
-            <string name="desc" value="A key that looks like it can unlock the doors inside the Haunted Mansion."/>
-            <string name="name" value="Haunted Mansion Brass Key"/>
+            <string name="desc" value="看起来可以打开鬼屋内房门的钥匙。"/>
+            <string name="name" value="鬼屋黄铜钥匙"/>
         </imgdir>
         <imgdir name="4000521">
-            <string name="desc" value="Olivia&apos;s doll, which is obtained by defeating Olivia in the secret room. "/>
-            <string name="name" value="Olivia&apos;s Doll"/>
+            <string name="desc" value="在密室中击败奥莉维亚后获得的娃娃。"/>
+            <string name="name" value="奥莉维亚的娃娃"/>
         </imgdir>
         <imgdir name="4000522">
             <string name="desc"
                     value="A frog egg that has been cursed by Black Magic. Also, it is used as an ingredient in Witch Malady&apos;s cooking."/>
-            <string name="name" value="Cursed Frog Egg"/>
+            <string name="name" value="被诅咒的青蛙蛋"/>
         </imgdir>
         <imgdir name="4000523">
             <string name="desc"
                     value="Cat saliva that has been cursed with Black Magic. Also, it is used as an ingredient in Witch Malady&apos;s cooking."/>
-            <string name="name" value="Cursed Cat Spittle"/>
+            <string name="name" value="被诅咒的猫唾液"/>
         </imgdir>
         <imgdir name="4000524">
-            <string name="desc" value="Looks like a type of currency used in a world other than Maple World."/>
-            <string name="name" value="Dark Token"/>
+            <string name="desc" value="看起来是冒险岛世界之外某个世界使用的货币。"/>
+            <string name="name" value="黑暗代币"/>
         </imgdir>
         <imgdir name="4000525">
             <string name="desc" value="童装模特穿的兔子装装。"/>
@@ -3138,20 +3138,20 @@
             <string name="name" value="马马虎虎的符咒"/>
         </imgdir>
         <imgdir name="4001216">
-            <string name="desc" value="It&apos;s a diamond mark."/>
-            <string name="name" value="Diamond Mark"/>
+            <string name="desc" value="这是一个菱形标记。"/>
+            <string name="name" value="菱形标记"/>
         </imgdir>
         <imgdir name="4001217">
-            <string name="desc" value="It&apos;s a diamond mark."/>
-            <string name="name" value="Heart Mark"/>
+            <string name="desc" value="这是一个菱形标记。"/>
+            <string name="name" value="心形标记"/>
         </imgdir>
         <imgdir name="4001218">
-            <string name="desc" value="It&apos;s a space mark."/>
-            <string name="name" value="Space Mark"/>
+            <string name="desc" value="这是一个空格标记。"/>
+            <string name="name" value="空格标记"/>
         </imgdir>
         <imgdir name="4001219">
-            <string name="desc" value="It&apos;s a clover mark."/>
-            <string name="name" value="Clover Mark"/>
+            <string name="desc" value="这是一个四叶草标记。"/>
+            <string name="name" value="四叶草标记"/>
         </imgdir>
         <imgdir name="4001231">
             <string name="desc" value="是圣诞拐杖。"/>
@@ -3560,20 +3560,20 @@
             <string name="name" value="时间旅行者的通行证"/>
         </imgdir>
         <imgdir name="4001428">
-            <string name="desc" value="One of Cupid&apos;s Lost Arrows."/>
-            <string name="name" value="Cupid&apos;s Lost Arrow"/>
+            <string name="desc" value="丘比特遗失的箭之一。"/>
+            <string name="name" value="丘比特遗失的箭"/>
         </imgdir>
         <imgdir name="4001429">
-            <string name="desc" value="A necklace that Gaga wants."/>
-            <string name="name" value="Mardi Gras Bead Necklace"/>
+            <string name="desc" value="佳佳想要的项链。"/>
+            <string name="name" value="狂欢节珠链"/>
         </imgdir>
         <imgdir name="4001433">
             <string name="desc" value="在暗处也能发光的拥有神圣力量的太阳的火焰。"/>
             <string name="name" value="太阳火焰"/>
         </imgdir>
         <imgdir name="4001434">
-            <string name="desc" value="Use this coupon on a Gachapon machine to het a veriety of food. "/>
-            <string name="name" value="Gachapon Food Coupon"/>
+            <string name="desc" value="在扭蛋机上使用此券，可以获得各种食物。"/>
+            <string name="name" value="扭蛋食物券"/>
         </imgdir>
         <imgdir name="4001684">
             <string name="desc" value="可以阻挡从黄金寺院的拉瓦那黄金祭坛那里散发出来的恶魔气息。"/>
@@ -5986,12 +5986,12 @@
             <string name="name" value="Nexon公司预付250分"/>
         </imgdir>
         <imgdir name="4031532">
-            <string name="desc" value="An NX cash card worth 5000 points. Redeemable in the Cash Shop."/>
-            <string name="name" value="NX Cash Card - 5000 Points"/>
+            <string name="desc" value="价值5000点的NX现金卡。可在商城兑换。"/>
+            <string name="name" value="NX现金卡 - 5000点"/>
         </imgdir>
         <imgdir name="4031533">
-            <string name="desc" value="An NX cash card worth 1000 points. Redeemable in the Cash Shop."/>
-            <string name="name" value="NX Cash Card - 1000 Points"/>
+            <string name="desc" value="价值1000点的NX现金卡。可在商城兑换。"/>
+            <string name="name" value="NX现金卡 - 1000点"/>
         </imgdir>
         <imgdir name="4031534">
             <string name="name" value="伊莎贝尔"/>
@@ -6476,16 +6476,16 @@
             <string name="name" value="箱子"/>
         </imgdir>
         <imgdir name="4031658">
-            <string name="desc" value="Heats up the grill, needed for any BBQ."/>
-            <string name="name" value="Charcoal"/>
+            <string name="desc" value="用来加热烤架，任何烧烤都需要。"/>
+            <string name="name" value="木炭"/>
         </imgdir>
         <imgdir name="4031659">
-            <string name="desc" value="Spicy sauce. Goes perfect with Maple Meat."/>
-            <string name="name" value="BBQ Sauce"/>
+            <string name="desc" value="辛辣酱料，和枫叶肉搭配绝佳。"/>
+            <string name="name" value="烧烤酱"/>
         </imgdir>
         <imgdir name="4031660">
-            <string name="desc" value="Fresh meat ready to be cooked. Tastes excellent with BBQ sauce."/>
-            <string name="name" value="Maple Raw Meat"/>
+            <string name="desc" value="准备烹饪的新鲜肉，搭配烧烤酱味道极佳。"/>
+            <string name="name" value="枫叶生肉"/>
         </imgdir>
         <imgdir name="4031661">
             <string name="desc" value="装有闪亮的紫色液体的水瓶。可\n以装载感情。"/>
@@ -6500,16 +6500,16 @@
             <string name="name" value="应急治疗药"/>
         </imgdir>
         <imgdir name="4031664">
-            <string name="desc" value="Heats up the grill, needed for any BBQ."/>
-            <string name="name" value="Charcoal"/>
+            <string name="desc" value="用来加热烤架，任何烧烤都需要。"/>
+            <string name="name" value="木炭"/>
         </imgdir>
         <imgdir name="4031665">
-            <string name="desc" value="Spicy sauce. Goes perfect with Maple Meat."/>
-            <string name="name" value="BBQ Sauce"/>
+            <string name="desc" value="辛辣酱料，和枫叶肉搭配绝佳。"/>
+            <string name="name" value="烧烤酱"/>
         </imgdir>
         <imgdir name="4031666">
-            <string name="desc" value="Fresh meat ready to be cooked. Tastes excellent with BBQ sauce."/>
-            <string name="name" value="Maple Raw Meat"/>
+            <string name="desc" value="准备烹饪的新鲜肉，搭配烧烤酱味道极佳。"/>
+            <string name="name" value="枫叶生肉"/>
         </imgdir>
         <imgdir name="4031667">
             <string name="desc" value="装有闪亮的紫色液体的水瓶。可\n以装载感情。"/>
@@ -6536,8 +6536,8 @@
             <string name="name" value="遗失的古埃及十字架"/>
         </imgdir>
         <imgdir name="4031677">
-            <string name="desc" value="A key dropped from the Komodo Duo. Can be used to enter Foxwit&apos;s Den."/>
-            <string name="name" value="Komodo Key"/>
+            <string name="desc" value="从科莫多双人组掉落的钥匙。可用来进入福克斯维特的巢穴。"/>
+            <string name="name" value="科莫多钥匙"/>
         </imgdir>
         <imgdir name="4031678">
             <string name="desc" value="使用于大笨钟內部电梯的钥匙。"/>
@@ -6558,7 +6558,7 @@
         <imgdir name="4031682">
             <string name="desc"
                     value="A mystic coin that temporarily bonds with the traveler for a short period of time. "/>
-            <string name="name" value="Gullivera Coin"/>
+            <string name="name" value="格列佛拉硬币"/>
         </imgdir>
         <imgdir name="4031683">
             <string name="desc" value="玛亚给的爱的见证。"/>
@@ -6799,27 +6799,27 @@
         <imgdir name="4031750">
             <string name="desc"
                     value="Strange matter from the depths of space.  When used in the construction of items, who knows what effect it&apos;ll have!"/>
-            <string name="name" value="Dark Matter"/>
+            <string name="name" value="暗物质"/>
         </imgdir>
         <imgdir name="4031751">
             <string name="desc"
                     value="A futuristic machine part that perpetually makes whirling noises.  Once a part of a bigger machine, it can be used to create something new."/>
-            <string name="name" value="Vorticular Gyro"/>
+            <string name="name" value="旋涡陀螺"/>
         </imgdir>
         <imgdir name="4031752">
             <string name="desc"
                     value="A futuristic machine part that blinks steadily and mysteriously.  It&apos;s original use is unknown but it can be broken down to create something else."/>
-            <string name="name" value="Blinking Dingbat"/>
+            <string name="name" value="闪烁零件"/>
         </imgdir>
         <imgdir name="4031753">
             <string name="desc"
                     value="Residual matter from the explosion of a distant dying star that&apos;s taken eons to reach here. "/>
-            <string name="name" value="Zeta Residue"/>
+            <string name="name" value="泽塔残渣"/>
         </imgdir>
         <imgdir name="4031754">
             <string name="desc"
                     value="A form of concentrated energy, harvested from the alternate dimension of Versal. The dark energy denotes a chaotic element."/>
-            <string name="name" value="Black Versal Materia"/>
+            <string name="name" value="黑色反转界魔质"/>
         </imgdir>
         <imgdir name="4031755">
             <string name="desc" value="蕴含着神秘力量的远古图腾。"/>
@@ -6850,12 +6850,12 @@
             <string name="name" value="魔质珠"/>
         </imgdir>
         <imgdir name="4031762">
-            <string name="desc" value="Relic Weapon Blueprint"/>
-            <string name="name" value="Relic Weapon Blueprint"/>
+            <string name="desc" value="遗物武器图纸。"/>
+            <string name="name" value="遗物武器图纸"/>
         </imgdir>
         <imgdir name="4031763">
-            <string name="desc" value="Materia Weapon Blueprint"/>
-            <string name="name" value="Materia Weapon Blueprint"/>
+            <string name="desc" value="魔质武器图纸。"/>
+            <string name="name" value="魔质武器图纸"/>
         </imgdir>
         <imgdir name="4031764">
             <string name="desc" value="来自于详述奇怪活动与鬼可能出\n没的位置档案中的一页。看起来\n并不专业。"/>
@@ -7017,7 +7017,7 @@
         <imgdir name="4031805">
             <string name="desc"
                     value="Threatened for his life, Bob went back into his shell. You can carry him. He&apos;s not too heavy.."/>
-            <string name="name" value="Bob&apos;s Snail Shell"/>
+            <string name="name" value="鲍勃的蜗牛壳"/>
         </imgdir>
         <imgdir name="4031806">
             <string name="desc" value="罗密欧为了向深爱的朱丽叶求婚\n求阿尔雷哥做成的戒指。"/>
@@ -7076,36 +7076,36 @@
             <string name="name" value="枫叶棒棒糖"/>
         </imgdir>
         <imgdir name="4031822">
-            <string name="desc" value="John Barricade&apos;s hastily drawn notes for creating an Infinity Circlet."/>
-            <string name="name" value="Infinity Circlet Forging Manual"/>
+            <string name="desc" value="约翰·巴里凯德匆忙绘制的无限头环制作笔记。"/>
+            <string name="name" value="无限头环锻造指南"/>
         </imgdir>
         <imgdir name="4031823">
-            <string name="desc" value="John Barricade&apos;s hastily drawn notes for creating an Antellion Miter."/>
-            <string name="name" value="Antellion Miter Forging Manual"/>
+            <string name="desc" value="约翰·巴里凯德匆忙绘制的安泰利昂法冠制作笔记。"/>
+            <string name="name" value="安泰利昂法冠锻造指南"/>
         </imgdir>
         <imgdir name="4031824">
-            <string name="desc" value="John Barricade&apos;s hastily drawn notes for creating Stormcaster Gloves."/>
-            <string name="name" value="Stormcaster Gloves Forging Manual"/>
+            <string name="desc" value="约翰·巴里凯德匆忙绘制的风暴使者手套制作笔记。"/>
+            <string name="name" value="风暴使者手套锻造指南"/>
         </imgdir>
         <imgdir name="4031825">
-            <string name="desc" value="John Barricade&apos;s hastily drawn notes for creating Crystal Leaf Earrings."/>
-            <string name="name" value="Crystal Leaf Earrings Forging Manual"/>
+            <string name="desc" value="约翰·巴里凯德匆忙绘制的水晶叶耳环制作笔记。"/>
+            <string name="name" value="水晶叶耳环锻造指南"/>
         </imgdir>
         <imgdir name="4031826">
-            <string name="desc" value="Professor Foxwit&apos;s blueprint for creating a Zeta Cape."/>
-            <string name="name" value="Zeta Cape Forging Manual"/>
+            <string name="desc" value="福克斯维特教授制作的泽塔披风图纸。"/>
+            <string name="name" value="泽塔披风锻造指南"/>
         </imgdir>
         <imgdir name="4031827">
-            <string name="desc" value="Professor Foxwit&apos;s blueprint for creating a Sirius Cloak."/>
-            <string name="name" value="Sirius Cloak Forging Manual"/>
+            <string name="desc" value="福克斯维特教授制作的天狼星披风图纸。"/>
+            <string name="name" value="天狼星披风锻造指南"/>
         </imgdir>
         <imgdir name="4031828">
-            <string name="desc" value="Professor Foxwit&apos;s blueprint for creating Dark Shard Earrings."/>
-            <string name="name" value="Dark Shard Earrings Forging Manual"/>
+            <string name="desc" value="福克斯维特教授制作的黑暗碎片耳环图纸。"/>
+            <string name="name" value="黑暗碎片耳环锻造指南"/>
         </imgdir>
         <imgdir name="4031829">
-            <string name="desc" value="Professor Foxwit&apos;s blueprint for creating a Black Phoenix Shield."/>
-            <string name="name" value="Black Phoenix Shield Forging Manual"/>
+            <string name="desc" value="福克斯维特教授制作的黑凤凰盾牌图纸。"/>
+            <string name="name" value="黑凤凰盾牌锻造指南"/>
         </imgdir>
         <imgdir name="4031830">
             <string name="desc" value="抓进幽灵的袋子。打开口子，幽\n灵就会跑出来。"/>
@@ -7244,16 +7244,16 @@
             <string name="name" value="报告书"/>
         </imgdir>
         <imgdir name="4031864">
-            <string name="desc" value="Money from Mom and Dad. Can be used to purchase a Nexon Game Card."/>
-            <string name="name" value="Allowance"/>
+            <string name="desc" value="爸爸妈妈给的钱。可用来购买Nexon游戏卡。"/>
+            <string name="name" value="零用钱"/>
         </imgdir>
         <imgdir name="4031865">
-            <string name="desc" value="A Nexon Game Card worth 100 points. Will be redeemed into Maple Points!"/>
-            <string name="name" value="Nexon Game Card - 100 points"/>
+            <string name="desc" value="价值100点的Nexon游戏卡。将兑换为枫叶点！"/>
+            <string name="name" value="Nexon游戏卡 - 100点"/>
         </imgdir>
         <imgdir name="4031866">
-            <string name="desc" value="A Nexon Game Card worth 250 points. Will be redeemed into Maple Points!"/>
-            <string name="name" value="Nexon Game Card - 250 points"/>
+            <string name="desc" value="价值250点的Nexon游戏卡。将兑换为枫叶点！"/>
+            <string name="name" value="Nexon游戏卡 - 250点"/>
         </imgdir>
         <imgdir name="4031868">
             <string name="desc" value="速成石里加入了怪兽的力量成为\n了宝石。有一些邪恶的感觉。"/>
@@ -7294,47 +7294,47 @@
         <imgdir name="4031877">
             <string name="desc"
                     value="Little Suzy&apos;s Wishlist. Neatly written in pencil. Must be taken to Maple Claws or O-Pongo. "/>
-            <string name="name" value="Little Suzy&apos;s Wishlist"/>
+            <string name="name" value="小苏西的愿望清单"/>
         </imgdir>
         <imgdir name="4031878">
-            <string name="desc" value="The spirit of Maplemas, the holiday celebrated annually in the Maple World! "/>
-            <string name="name" value="Star of Maplemas Spirit"/>
+            <string name="desc" value="枫叶圣诞的精神，这是冒险岛世界每年庆祝的节日！"/>
+            <string name="name" value="枫叶圣诞精神之星"/>
         </imgdir>
         <imgdir name="4031879">
             <string name="desc"
                     value="The spirit of Versalmas, the holiday celebrating the 99 days of sunshine in Versal."/>
-            <string name="name" value="Orb of Versalmas Cheer"/>
+            <string name="name" value="反转圣诞欢乐宝珠"/>
         </imgdir>
         <imgdir name="4031880">
             <string name="desc"
                     value="A stock certificate good for one share in Mr. Grubber&apos;s company.  It may be worth a lot of money someday!"/>
-            <string name="name" value="Stock Certificate for Grubber Industries"/>
+            <string name="name" value="格拉伯工业股票凭证"/>
         </imgdir>
         <imgdir name="4031881">
             <string name="desc"
                     value="Someone took a picture of Rudolph flying in the night sky of Happy ville. Rudolph seems happy in this picture."/>
-            <string name="name" value="Picture of Rudolph"/>
+            <string name="name" value="鲁道夫的照片"/>
         </imgdir>
         <imgdir name="4031882">
             <string name="desc"
                     value="This will enable you to sweep inside the Chimney eventhough it is long and wide."/>
-            <string name="name" value="Chimney Broom"/>
+            <string name="name" value="烟囱扫帚"/>
         </imgdir>
         <imgdir name="4031883">
-            <string name="desc" value="This will enable you to light up the dark chimney."/>
-            <string name="name" value="Flashlight"/>
+            <string name="desc" value="可以照亮黑暗的烟囱。"/>
+            <string name="name" value="手电筒"/>
         </imgdir>
         <imgdir name="4031884">
-            <string name="desc" value="This warm milk will help Icarus to go to bed."/>
-            <string name="name" value="Warm Milk"/>
+            <string name="desc" value="这杯热牛奶能帮助伊卡洛斯入睡。"/>
+            <string name="name" value="热牛奶"/>
         </imgdir>
         <imgdir name="4031885">
-            <string name="desc" value="Recommendation written by Happyville people."/>
-            <string name="name" value="Mapler Recommendation"/>
+            <string name="desc" value="幸福村居民写的推荐信。"/>
+            <string name="name" value="冒险家推荐信"/>
         </imgdir>
         <imgdir name="4031886">
-            <string name="desc" value="Happyville Trend Socks made with skill from Mrs. Santa Claus"/>
-            <string name="name" value="Completed Socks"/>
+            <string name="desc" value="用圣诞婆婆的手艺制作的幸福村流行袜子。"/>
+            <string name="name" value="完成的袜子"/>
         </imgdir>
         <imgdir name="4031887">
             <string name="desc" value="以魔法驯服的迷路的圣诞鹿。"/>
@@ -7825,8 +7825,8 @@
             <string name="name" value="枫叶水晶球"/>
         </imgdir>
         <imgdir name="4032057">
-            <string name="desc" value="An attendance sheet that checks your daily attendance to MapleStory."/>
-            <string name="name" value="Attendance Sheet"/>
+            <string name="desc" value="用于确认每天登录冒险岛情况的出席表。"/>
+            <string name="name" value="出席确认书"/>
         </imgdir>
         <imgdir name="4032058">
             <string name="desc"
@@ -7836,26 +7836,26 @@
         <imgdir name="4032059">
             <string name="desc"
                     value="Rich Happyville chocolate combined with high-quality milk straight from the fields of Henesys. A delicious treat!"/>
-            <string name="name" value="Chocolate Milk"/>
+            <string name="name" value="巧克力牛奶"/>
         </imgdir>
         <imgdir name="4032060">
-            <string name="desc" value="An irresistible snack. Way too tasty to eat just one!"/>
-            <string name="name" value="Chips"/>
+            <string name="desc" value="让人无法抗拒的零食。太好吃，只吃一片根本不够！"/>
+            <string name="name" value="薯片"/>
         </imgdir>
         <imgdir name="4032061">
             <string name="desc"
                     value="A chocolate chip cookie found in the wild, now prepared to eat. Guaranteed to bring a smile to someone&apos;s face. "/>
-            <string name="name" value="Cookie"/>
+            <string name="name" value="曲奇饼干"/>
         </imgdir>
         <imgdir name="4032062">
             <string name="desc"
                     value="A favorite in Victoria Island, this delectable snack bursts with the taste of strawberries. "/>
-            <string name="name" value="Fruit Roll Up"/>
+            <string name="name" value="水果卷"/>
         </imgdir>
         <imgdir name="4032063">
             <string name="desc"
                     value="A special notebook used for the 2008 Back to School Event. Can be turned into the Maple Admin. May the best server team win!"/>
-            <string name="name" value="Notebook"/>
+            <string name="name" value="笔记本"/>
         </imgdir>
         <imgdir name="4032066">
             <string name="desc" value="蓬松的小鸟的羽毛。佳佳一定会\n很喜欢。"/>
@@ -8019,10 +8019,10 @@
             <string name="name" value="洛卡的任务报告书"/>
         </imgdir>
         <imgdir name="4032133">
-            <string name="name" value="Zakum Diamond"/>
+            <string name="name" value="扎昆钻石"/>
         </imgdir>
         <imgdir name="4032134">
-            <string name="name" value="Stone Denari"/>
+            <string name="name" value="石制第纳里"/>
         </imgdir>
         <imgdir name="4032135">
             <string name="desc" value="洒在鸡蛋或者小鸡身上，可以帮\n助成长"/>
@@ -8250,8 +8250,8 @@
             <string name="name" value="彩色透明糖纸"/>
         </imgdir>
         <imgdir name="4032233">
-            <string name="desc" value="This can be used to create the Mind of Maple Necklace."/>
-            <string name="name" value="Maple Necklace Chain"/>
+            <string name="desc" value="可用来制作枫叶之心项链。"/>
+            <string name="name" value="枫叶项链链子"/>
         </imgdir>
         <imgdir name="4032234">
             <string name="desc" value="内涵了战士守护神的庇佑"/>
@@ -8274,8 +8274,8 @@
             <string name="name" value="自由之心"/>
         </imgdir>
         <imgdir name="4032239">
-            <string name="desc" value="A piece of Mind of Maple given by Chief Stan"/>
-            <string name="name" value="Piece of Mind of Maple"/>
+            <string name="desc" value="村长斯坦给的枫叶之心碎片。"/>
+            <string name="name" value="枫叶之心碎片"/>
         </imgdir>
         <imgdir name="4032246">
             <string name="desc" value="要拯救梦幻主题公园所需要的非\n常重要关键物品。"/>
@@ -8284,10 +8284,10 @@
         <imgdir name="4032247">
             <string name="desc"
                     value="A love letter written by Richard. Needs to be delivered to Angelique of Amoria..."/>
-            <string name="name" value="Richard&apos;s Letter"/>
+            <string name="name" value="理查德的情书"/>
         </imgdir>
         <imgdir name="4032248">
-            <string name="name" value="Map to MV&apos;s Lair"/>
+            <string name="name" value="MV巢穴地图"/>
         </imgdir>
         <imgdir name="4032250">
             <string name="desc" value="纸条上张乱地写着什么内容。似\n乎是麦吉的弟子无影丢失的物品\n。拿给无影吧。"/>
@@ -8426,16 +8426,16 @@
             <string name="name" value="魔法颜料"/>
         </imgdir>
         <imgdir name="4032306">
-            <string name="desc" value="A candle Cody was looking for."/>
-            <string name="name" value="Yellow Birthday Candle"/>
+            <string name="desc" value="科迪正在寻找的蜡烛。"/>
+            <string name="name" value="黄色生日蜡烛"/>
         </imgdir>
         <imgdir name="4032307">
-            <string name="desc" value="A candle Cody was looking for."/>
-            <string name="name" value="Blue Birthday Candle"/>
+            <string name="desc" value="科迪正在寻找的蜡烛。"/>
+            <string name="name" value="蓝色生日蜡烛"/>
         </imgdir>
         <imgdir name="4032308">
-            <string name="desc" value="A candle Cody was looking for."/>
-            <string name="name" value="Pink Birthday Candle"/>
+            <string name="desc" value="科迪正在寻找的蜡烛。"/>
+            <string name="name" value="粉色生日蜡烛"/>
         </imgdir>
         <imgdir name="4032309">
             <string name="desc" value="从里恩岛上砍的一段竹子。看起\n来很适合用来制作椅子。"/>
@@ -8673,8 +8673,8 @@
             <string name="name" value="沙漠土拨鼠的帽子"/>
         </imgdir>
         <imgdir name="4032404">
-            <string name="desc" value="A piece that appears to be a fragment of the Miwok Artifact. "/>
-            <string name="name" value="Miwok Artifact Piece"/>
+            <string name="desc" value="看起来是米沃克神器碎片的一块。"/>
+            <string name="name" value="米沃克神器碎片"/>
         </imgdir>
         <imgdir name="4032405">
             <string name="desc" value="总理大臣残党所在的密室门的钥\n匙"/>
@@ -8732,52 +8732,52 @@
             <string name="name" value="黄蝴蝶"/>
         </imgdir>
         <imgdir name="4032435">
-            <string name="desc" value=" I wonder who this tombstone belongs to?"/>
-            <string name="name" value="Tombstone"/>
+            <string name="desc" value="不知道这座墓碑是谁的？"/>
+            <string name="name" value="墓碑"/>
         </imgdir>
         <imgdir name="4032436">
-            <string name="desc" value=" I wonder who this tombstone belongs to?"/>
-            <string name="name" value="Tombstone"/>
+            <string name="desc" value="不知道这座墓碑是谁的？"/>
+            <string name="name" value="墓碑"/>
         </imgdir>
         <imgdir name="4032437">
-            <string name="desc" value=" I wonder who this tombstone belongs to?"/>
-            <string name="name" value="Tombstone"/>
+            <string name="desc" value="不知道这座墓碑是谁的？"/>
+            <string name="name" value="墓碑"/>
         </imgdir>
         <imgdir name="4032438">
-            <string name="desc" value="A key that looks like it can unlock the doors inside the Haunted Mansion."/>
-            <string name="name" value="Haunted Mansion Brass Key"/>
+            <string name="desc" value="看起来可以打开鬼屋内房门的钥匙。"/>
+            <string name="name" value="鬼屋黄铜钥匙"/>
         </imgdir>
         <imgdir name="4032439">
-            <string name="desc" value="A key that looks like it can unlock the doors inside the Haunted Mansion."/>
-            <string name="name" value="Haunted Mansion Silver Key"/>
+            <string name="desc" value="看起来可以打开鬼屋内房门的钥匙。"/>
+            <string name="name" value="鬼屋银钥匙"/>
         </imgdir>
         <imgdir name="4032440">
-            <string name="desc" value="A key that looks like it can unlock the doors inside the Haunted Mansion."/>
-            <string name="name" value="Haunted Mansion Gold Key"/>
+            <string name="desc" value="看起来可以打开鬼屋内房门的钥匙。"/>
+            <string name="name" value="鬼屋金钥匙"/>
         </imgdir>
         <imgdir name="4032441">
-            <string name="desc" value="Olivia&apos;s Letter"/>
-            <string name="name" value="Olivia&apos;s Letter"/>
+            <string name="desc" value="奥莉维亚的信。"/>
+            <string name="name" value="奥莉维亚的信"/>
         </imgdir>
         <imgdir name="4032442">
-            <string name="desc" value="Olivia&apos;s Letter"/>
-            <string name="name" value="Olivia&apos;s Letter"/>
+            <string name="desc" value="奥莉维亚的信。"/>
+            <string name="name" value="奥莉维亚的信"/>
         </imgdir>
         <imgdir name="4032443">
-            <string name="desc" value="Olivia&apos;s Letter"/>
-            <string name="name" value="Olivia&apos;s Letter"/>
+            <string name="desc" value="奥莉维亚的信。"/>
+            <string name="name" value="奥莉维亚的信"/>
         </imgdir>
         <imgdir name="4032444">
-            <string name="desc" value="A green-colored Halloween Candy that Cassandra likes."/>
-            <string name="name" value="Green Halloween Stick Candy"/>
+            <string name="desc" value="卡珊德拉喜欢的绿色万圣节糖果。"/>
+            <string name="name" value="绿色万圣节棒棒糖"/>
         </imgdir>
         <imgdir name="4032445">
-            <string name="desc" value="A blue-colored Halloween Candy that Cassandra likes."/>
-            <string name="name" value="Blue Halloween Stick Candy"/>
+            <string name="desc" value="卡珊德拉喜欢的蓝色万圣节糖果。"/>
+            <string name="name" value="蓝色万圣节棒棒糖"/>
         </imgdir>
         <imgdir name="4032446">
-            <string name="desc" value="A red-colored Halloween Candy that Cassandra likes."/>
-            <string name="name" value="Red Halloween Stick Candy"/>
+            <string name="desc" value="卡珊德拉喜欢的红色万圣节糖果。"/>
+            <string name="name" value="红色万圣节棒棒糖"/>
         </imgdir>
         <imgdir name="4032447">
             <string name="desc" value="装在小袋子里的饲料。猎犬应该\n会很喜欢吃。"/>
@@ -9071,29 +9071,29 @@
             <string name="name" value="VIP邀请券"/>
         </imgdir>
         <imgdir name="4032522">
-            <string name="desc" value="An oversized Yellow Turkey Egg. You can turn this in to Cody."/>
-            <string name="name" value="Yellow Turkey Egg"/>
+            <string name="desc" value="超大的黄色火鸡蛋。可以交给科迪。"/>
+            <string name="name" value="黄色火鸡蛋"/>
         </imgdir>
         <imgdir name="4032523">
-            <string name="desc" value="An oversized Green Turkey Egg. You can turn this in to Cody. "/>
-            <string name="name" value="Green Turkey Egg"/>
+            <string name="desc" value="超大的绿色火鸡蛋。可以交给科迪。"/>
+            <string name="name" value="绿色火鸡蛋"/>
         </imgdir>
         <imgdir name="4032524">
-            <string name="desc" value="An oversized Blue Turkey Egg. You can turn this in to Cody. "/>
-            <string name="name" value="Blue Turkey Egg"/>
+            <string name="desc" value="超大的蓝色火鸡蛋。可以交给科迪。"/>
+            <string name="name" value="蓝色火鸡蛋"/>
         </imgdir>
         <imgdir name="4032525">
-            <string name="desc" value="A pair of futuristic eyeglasses previously worn by Turkey Commando."/>
-            <string name="name" value="Turkey Commando&apos;s Eye"/>
+            <string name="desc" value="火鸡突击兵曾佩戴的一副未来感眼镜。"/>
+            <string name="name" value="火鸡突击兵之眼"/>
         </imgdir>
         <imgdir name="4032576">
-            <string name="name" value="Green Mardi Gras Feather"/>
+            <string name="name" value="绿色狂欢节羽毛"/>
         </imgdir>
         <imgdir name="4032577">
-            <string name="name" value="Purple Mardi Gras Feather"/>
+            <string name="name" value="紫色狂欢节羽毛"/>
         </imgdir>
         <imgdir name="4032578">
-            <string name="name" value="Red Mardi Gras Feather"/>
+            <string name="name" value="红色狂欢节羽毛"/>
         </imgdir>
         <imgdir name="4032602">
             <string name="desc" value="来黄金寺院旅游的女游客丽塔娅的手机。"/>
@@ -9186,12 +9186,12 @@
         <imgdir name="4039021">
             <string name="desc"
                     value="Mar the Fairy&apos;s enchanted chalice. When filled with truly pure, magic water, it is said that drinking from it will restore one&apos;s youth and vitality."/>
-            <string name="name" value="Empty Chalice"/>
+            <string name="name" value="空圣杯"/>
         </imgdir>
         <imgdir name="4039022">
             <string name="desc"
                     value="Mar the Fairy&apos;s enchanted chalice. When filled with truly pure, magic water, it is said that drinking from it will restore one&apos;s youth and vitality."/>
-            <string name="name" value="Empty Chalice"/>
+            <string name="name" value="空圣杯"/>
         </imgdir>
         <imgdir name="4039057">
             <string name="desc"
@@ -9779,12 +9779,12 @@
         <imgdir name="4140902">
             <string name="desc"
                     value="A sweet pineapple candy. Much like the Safety Charm, it does not let the user lose EXP points after death, as long as it&apos;s in possession. #cCan be used ONCE within the expiration date#"/>
-            <string name="name" value="Pineapple Candy"/>
+            <string name="name" value="菠萝糖果"/>
         </imgdir>
         <imgdir name="4140903">
             <string name="desc"
                     value="This will allow the possessor of the item to retain all of the EXP points even after death. The item will be discarded after use."/>
-            <string name="name" value="Easter Charm"/>
+            <string name="name" value="复活节护符"/>
         </imgdir>
         <imgdir name="4150000">
             <string name="name" value="请柬"/>
@@ -9925,7 +9925,7 @@
         <imgdir name="4160036">
             <string name="desc"
                     value="A guide that has all the commands for the Gorilla Robo.\n#cDouble-click on the item to open the guide.#"/>
-            <string name="name" value="Pet Command Guide : Gorilla Robo"/>
+            <string name="name" value="宠物指令说明书：大猩猩机器人"/>
         </imgdir>
         <imgdir name="4160037">
             <string name="desc" value="记载着可对水晶银圣诞鹿使用的\n指令说明书。\n#c快速双击该道具，便可开启书本#"/>
@@ -10108,32 +10108,32 @@
         <imgdir name="4161038">
             <string name="desc"
                     value="Santa Encyclopedia that contains the history of Santa&apos;s Family.\n#cDouble click on the item to open the book."/>
-            <string name="name" value="Santa Encyclopedia No.2"/>
+            <string name="name" value="圣诞百科全书第2卷"/>
         </imgdir>
         <imgdir name="4161039">
             <string name="desc"
                     value="Santa Encyclopedia that contains method about how to make the Christmas Socks.\n#cDouble click on the item to open the book."/>
-            <string name="name" value="Santa Encyclopedia No.3"/>
+            <string name="name" value="圣诞百科全书第3卷"/>
         </imgdir>
         <imgdir name="4161040">
             <string name="desc"
                     value="Santa Encyclopedia that contains characteristics of Santa.\n#cDouble click on the item to open the book."/>
-            <string name="name" value="Santa Encyclopedia No.4"/>
+            <string name="name" value="圣诞百科全书第4卷"/>
         </imgdir>
         <imgdir name="4161041">
             <string name="desc"
                     value="Santa Encyclopedia that contains how to do a good thing for Christmas.\n#cDouble click on the item to open the book."/>
-            <string name="name" value="Santa Encyclopedia No.5"/>
+            <string name="name" value="圣诞百科全书第5卷"/>
         </imgdir>
         <imgdir name="4161042">
             <string name="desc"
                     value="Santa Encyclopedia that explains about the Santa village of Finland.\n#cDouble click on the item to open the book."/>
-            <string name="name" value="Santa Encyclopedia No.6"/>
+            <string name="name" value="圣诞百科全书第6卷"/>
         </imgdir>
         <imgdir name="4161043">
             <string name="desc"
                     value="Santa Encyclopedia that contains the history of Santa.\n#cDouble click on the item to open the book."/>
-            <string name="name" value="Santa Encyclopedia No.1"/>
+            <string name="name" value="圣诞百科全书第1卷"/>
         </imgdir>
         <imgdir name="4161044">
             <string name="desc" value="记录着和“蕴藏有希纳斯的精神\n的书”的对话内容的书。"/>
@@ -10168,8 +10168,8 @@
             <string name="name" value="某个船员的航海日志"/>
         </imgdir>
         <imgdir name="4161999">
-            <string name="desc" value="MISSING INFO"/>
-            <string name="name" value="MISSING NAME"/>
+            <string name="desc" value="缺失信息。"/>
+            <string name="name" value="缺失名称"/>
         </imgdir>
         <imgdir name="4170000">
             <string name="desc"
@@ -10219,7 +10219,7 @@
         <imgdir name="4170012">
             <string name="desc"
                     value="A small egg taken out of the DS egg basket. The egg is hard as steel and cannot be opened without a special device. #cWill be placed in an incubator when you double-click it.#   "/>
-            <string name="name" value="DS Egg  "/>
+            <string name="name" value="DS蛋"/>
         </imgdir>
         <imgdir name="4200000">
             <string name="name" value="蘑菇王的御守"/>
@@ -10465,7 +10465,7 @@
         <imgdir name="4220022">
             <string name="desc"
                     value="Double click on the item to open the UI to add knitting balls to make the Christmas socks."/>
-            <string name="name" value="Socks Frame"/>
+            <string name="name" value="袜子框架"/>
         </imgdir>
         <imgdir name="4220023">
             <string name="desc" value="可以知道今年运势的纸。"/>
@@ -11070,12 +11070,12 @@
         <imgdir name="4280002">
             <string name="desc"
                     value="A gold treasure chest dropped by a monster. This can be opened with the Premium Gold Master Key available at the Cash Shop. If you already have the Premium Gold Master Key, just double-click the box to open it."/>
-            <string name="name" value="Premium Gold Box"/>
+            <string name="name" value="高级金宝箱"/>
         </imgdir>
         <imgdir name="4280003">
             <string name="desc"
                     value="A silver treasure chest dropped by a monster. This can be opened with the Premium Silver Master Key available at the Cash Shop. If you already have the Premium Silver Master Key, just double-click the box to open it."/>
-            <string name="name" value="Premium Silver Box"/>
+            <string name="name" value="高级银宝箱"/>
         </imgdir>
         <imgdir name="4290000">
             <string name="desc" value="金鸡效果。您可以通过双击图标\n或使用按键配置菜单指定快捷键\n打开/关闭。"/>
