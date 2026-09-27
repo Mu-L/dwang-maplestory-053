@@ -145,4 +145,14 @@ public class HiddenMapAchievementManager {
     public static boolean isHiddenMap(int mapId) {
         return HIDDEN_MAP_IDS.contains(mapId);
     }
+
+    /**
+     * 获取全部隐藏地图 ID（只读集合）。
+     * 活动怪物系统把它当作候选地图池使用。
+     *
+     * @return 不可变的隐藏地图 ID 集合
+     */
+    public static Set<Integer> getHiddenMapIds() {
+        return HIDDEN_MAP_IDS;
+    }
 }

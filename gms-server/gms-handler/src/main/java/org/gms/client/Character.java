@@ -2126,7 +2126,7 @@ public class Character extends AbstractCharacterObject {
                                 this.getMap().pickItemDrop(pickupPacket, mapitem);
                             } else if (ItemId.isNxCard(mapitem.getItemId())) {
                                 // Add NX to account, show effect and make item disappear   //添加点券到账户，是否展示捡到点券，并移除物品
-                                int nxGain = (mapitem.getItemId() == ItemId.NX_CARD_100 ? 100 : 250) * mItem.getQuantity(); //使点券支持按数量相乘
+                                int nxGain = ItemUtils.getNXSingle(mapitem.getItemId()) * mItem.getQuantity(); //使点券支持按数量相乘
                                 this.getCashShop().gainCash(CashShop.NX_CREDIT, nxGain);
 
                                 if (GameConfig.getServerBoolean("use_announce_nx_coupon_loot")) {       //捡到点券是否展示
@@ -2180,7 +2180,7 @@ public class Character extends AbstractCharacterObject {
                         }
                     } else if (ItemId.isNxCard(mapitem.getItemId())) {
                         // Add NX to account, show effect and make item disappear
-                        int nxGain = (mapitem.getItemId() == ItemId.NX_CARD_100 ? 100 : 250) * mItem.getQuantity(); //使点券支持按数量相乘
+                        int nxGain = ItemUtils.getNXSingle(mapitem.getItemId()) * mItem.getQuantity(); //使点券支持按数量相乘
                         this.getCashShop().gainCash(CashShop.NX_CREDIT, nxGain);
 //						dropMessage(5, String.format("get %d nxCredit, have %d nxCredit", nxGain, this.getCashShop().getNxCredit()));  // 顯示點卷信息
 
@@ -2188,7 +2188,7 @@ public class Character extends AbstractCharacterObject {
                             showHint(I18nUtil.getMessage("Character.pickupItem.message1", nxGain, this.getCashShop().getCash(CashShop.NX_CREDIT)), 300);
                             //showHint("捡到 #e#b" + nxGain + " NX#k#n (" + this.getCashShop().getCash(CashShop.NX_CREDIT) + " NX)", 300);
                         }
-                        // 053没有
+                        // 053没有showHint
                         dropMessage(ServerMsgType.Pink_Text.getType(), String.format("获得点卷：%d, 当前拥有点卷数量：%d", nxGain, cashShop.getNxCredit()));  // 顯示點卷信息
 
                     } else if (applyConsumeOnPickup(mItem.getItemId())) {//此段判断为处理捡取治疗道具和怪物卡加入图鉴

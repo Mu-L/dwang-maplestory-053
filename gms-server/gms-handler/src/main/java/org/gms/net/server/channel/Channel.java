@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package org.gms.net.server.channel;
 
+import org.gms.activity.ActivityMonsterManager;
 import org.gms.client.Character;
 import org.gms.config.GameConfig;
 import org.gms.constants.id.MapId;
@@ -92,6 +93,7 @@ public final class Channel {
     private String serverMessage;
     private MapManager mapManager;
     private EventScriptManager eventSM;
+    private ActivityMonsterManager activityMonsterManager;
     private ServicesManager services;
     private final Map<Integer, HiredMerchant> hiredMerchants = new HashMap<>();
     private final Map<Integer, Integer> storedVars = new HashMap<>();
@@ -154,6 +156,10 @@ public final class Channel {
                 eventSM = new EventScriptManager(this, ev);
             }
 
+            // 活动怪物管理器：读数据库配置 + 启动计时
+            activityMonsterManager = new ActivityMonsterManager(this);
+            activityMonsterManager.start();
+
             dojoStage = new int[20];
             dojoFinishTime = new long[20];
             dojoTask = new ScheduledFuture<?>[20];
@@ -185,6 +191,10 @@ public final class Channel {
         eventSM.cancel();
         eventSM = null;
         eventSM = new EventScriptManager(this, getEventsV2());
+
+        if (activityMonsterManager != null) {
+            activityMonsterManager.reload();
+        }
     }
 
     public synchronized void shutdown() {
@@ -198,6 +208,11 @@ public final class Channel {
             closeAllMerchants();
             disconnectAwayPlayers();
             players.disconnectAll();
+
+            if (activityMonsterManager != null) {
+                activityMonsterManager.dispose();
+                activityMonsterManager = null;
+            }
 
             eventSM.dispose();
             eventSM = null;
@@ -259,6 +274,15 @@ public final class Channel {
 
     public MapManager getMapFactory() {
         return mapManager;
+    }
+
+    /**
+     * 活动怪物管理器。供 GM 命令 / 后台控制台调用：
+     * {@code reload()} 重读数据库配置、{@code clear(eventKey, false)} 立即清场、
+     * {@code aliveCount(eventKey)} 查存活数、{@code loadedEventKeys()} 查已载入的活动。
+     */
+    public ActivityMonsterManager getActivityMonsterManager() {
+        return activityMonsterManager;
     }
 
     public BaseService getServiceAccess(ChannelServices sv) {

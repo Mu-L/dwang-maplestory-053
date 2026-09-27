@@ -2076,6 +2076,18 @@ public class MapleMap {
         }
     }
 
+    /**
+     * 暴露地图自带的怪物刷怪点（只读快照），供活动怪物系统使用。
+     *
+     * <p>这些点是 WZ 里标注好的，坐标一定在真实平台上，并且带着正确的 foothold 编号。
+     * 调用方只应读取 {@code getPosition() / getFh() / getF() / getMonsterId()}，
+     * <b>不要调用 {@code SpawnPoint#getMonster()}</b> —— 那会 spawnedMonsters++ 并挂 listener，
+     * 顶掉地图自身的刷新节奏。
+     */
+    public List<SpawnPoint> getMonsterSpawnPoints() {
+        return getMonsterSpawn();
+    }
+
     private List<SpawnPoint> getAllMonsterSpawn() {
         synchronized (allMonsterSpawn) {
             return new ArrayList<>(allMonsterSpawn);
