@@ -104,3 +104,25 @@ config.ini 放在客户端主目录。它没有也能跑：没有这个文件、
   3. 这个替换是直接编译进 Hook.dll 的（不改数据文件、也不改 StringPool 表），所以本版只更新
      Hook.dll；它是编译期选项（源码 Config.h 里的 PermanentDaysFix / PermanentDaysIndex /
      PermanentDaysValue），不在 config.ini 里。
+
+十一、v1.1.5 的内容（2026-09-27）
+  1. 【新增】镜头下沿"收多少"现在可以按地图单独配（以前只能全局一个值）：
+       CameraBottomSlack = 50                  ; 默认值，没列出的地图都用它
+       CameraBottomSlack.240010000 = 100       ; 这张图单独用 100
+       CameraBottomSlack.000000001 = 0         ; 小编号地图（自定义服的 map 1）也支持
+       CameraBottomSlack.91* = 80              ; 通配：编号以 91 开头的图全部用 80
+     规则：精确编号 > 更长的前缀 > 更短的前缀（9100* 比 91* 具体），一条都没命中才用默认值；
+     带 * 的前缀位数随意（9* / 91* / 9100* 都行）。
+  2. 【新增】背景横向补铺的"允许铺几层"也能按地图配：
+       WideBackFillBackmost = 3                ; 默认：最靠后的 3 层允许补铺
+       WideBackFillBackmost.240040700 = 1      ; 这张图只铺最底那一层
+       WideBackFillBackmost.2400* = 0          ; 2400 开头的图完全不补铺（= 原版）
+     有些地图 back 列表最前面几层其实是实体景物（不是天幕），横向一铺就满屏重复、把地图盖住，
+     用这个键按图调小或者设 0 关掉。日志里每层末尾的 [backmost] 就是"被允许铺的层"。
+  3. 【修复】自定义服的小地图编号（map 1、map 2 这种）以前会被当成无效值丢掉，导致规则全部落到
+     默认值；现在只要求 编号 > 0 且 < 10 亿（解码口自带校验，能读出来就是真的地图 ID）。
+  4. 默认行为与 v1.1.4 完全一致：CameraTopSlack / CameraTopCrop / WideBackFillVertical 都默认关
+     （0 / 0 / false），config.ini 里没写就不会有任何变化。
+  5. 【诊断】每次进图会打一行日志（DebugView 可见），写明地图 ID 是从哪读到的、上下沿用了多少、
+     命中了哪条规则，方便核对 config.ini 里的表：
+       camera slack: map 240040700 (field+0xDC, ...) -> bottom 50% top 0% crop 0px (defaults 50% / 0% / 0%)

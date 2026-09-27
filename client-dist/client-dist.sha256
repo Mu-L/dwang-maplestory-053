@@ -1,11 +1,11 @@
 ﻿# client-dist.sha256 —— 由 tools\make-manifest.ps1 生成，不要手改
 # 格式： <sha256>  <相对 client-dist 的路径>（正斜杠）
-75c5fca0625f8ad139a2ee396b8ff017d6a5b89cb580745ef807c1ba8a4d2d63  plugin/config.ini
+f2278a0a817b6d4aa06401603dc6800b4c4b3ece3e061d6276ccef93ec385030  plugin/config.ini
 6cb2f42023e78108d3fc9f5fb814b54277fffe119a96c70bbc15c2b73553608a  plugin/garbled053_zh.txt
-5b12603409288a78bee48fe29b893aa701715a55748cd52ecf7c40224c89ee34  plugin/Hook.dll
+13e641bbed02907bf81d76bb3c747f9ca39cd744244f4cd0ae8d970b9e8d6b16  plugin/Hook.dll
 ffa4c6aeaead9c4806cb5f0c8cae46484333cf8d2fe79e8894673dd44d6d9a3b  plugin/Launcher.exe
 bf1144db3814545372452cfaf5ea83d6e1eeb742410c31ce93e034a48c9f4baa  plugin/stringpool053_zh.txt
-457d3ec87ca14c193daa20fff56cba7a60f76ab53e3a1c61a7a46433b816ad7f  plugin/发布说明.txt
+f12d23ec232511c69c902affdc46f6ab08fc69a834a6fb42f7b7fd05e2ba4a1e  plugin/发布说明.txt
 50092bef5cb51b178dcf28db9c8e9cd8a326ac4b75f5b5c555d870bdcfc4c491  data/Data/Etc/BlockReason.img
 cba6f86583ed312e29283b7dae249958fd8090d48172b518faf511f7b2412edd  data/Data/Etc/CashPackage.img
 2dc1d870821147b1c79fb6abf2b8c8dabef269e0c86d3bb4b72e41a42649c4a4  data/Data/Etc/Category.img
@@ -78,7 +78,7 @@ a47ca8fedeb600352142a2bcdf88328c7251b62ddd4d70e3cd4190759555cc8f  data/Data/Item
 c1101760cb846a4be1c1e54483a134ca5cb9175496d4bc4f5817e39601610b3c  data/Data/Item/Etc/0400.img
 aa3d85f06c76cb7a4fb5f5fe4019a347888f92bf710b96f1dafacfb64cbe2171  data/Data/Item/Etc/0401.img
 91cf08c8f99ad36137812355f7d86077c3a679f38d4a1275cbfc7497465c53cf  data/Data/Item/Etc/0402.img
-d104e7ffd1a75c3e54162981cc804284f4f2d9b53b44ab9d4a3e050ac816e18b  data/Data/Item/Etc/0403.img
+49f8803141c37f058450b2e6c8d48d07e5f65ab8b880077b9d2cc4a34e1532b6  data/Data/Item/Etc/0403.img
 6468dce4b4e73c48fbe1fa9cafebc673e6039259da15f493cc094afb94fb9e6b  data/Data/Item/Etc/0408.img
 098c76a2ef8ac4b161398e42cf4e9899d51eb67770827554cfb2f1b79bea3825  data/Data/Item/Etc/0413.img
 88316f4934f9e7cff30c8357d628043d5b5366668a880e326d621d7710b9f490  data/Data/Item/Etc/0414.img
@@ -1046,9 +1046,9 @@ f0b274369af51061f36ab97992c7bd5f046a491f941a63fb1c1000b463304bd0  data/Data/Ques
 d31a0735168f9f2cad2a0f8af8985a972bd88cc6098dc53a6a09b506ab5b415a  data/Data/Quest/QuestInfo.img
 8747d3fa3fc235278e92c81a26beca80dc9e94737f5d0ec40b7084a41e7ac1de  data/Data/Quest/Say.img
 6091f79cd19ed65b41c73d99fdde95506229fe8a80781d15f493e17745a3ab4a  data/Data/String/EULA.img
-aa0ba9008b5fa3c92660beb55f2853eaac594804d514354736ea7374467511e9  data/Data/String/Item.img
+44e9c2c9b7ceb9d3bbfe19eaecc5591f0cf62b9de3a7e2be9fc62de1aa13c6af  data/Data/String/Item.img
 4c2dedf8a264b190726fb2a202f6c0b8d919751e82f5408c78de62e40615120e  data/Data/String/Map.img
-01c0bbf0893877e0c0ea1edb53a0401ebe6837e7f1becddcccfd2c5776f813de  data/Data/String/Mob.img
+0b97be8eb4092fc18ab335f912393e4fe5b1f94ea968654a5383c7861a548201  data/Data/String/Mob.img
 ce5df9f0e7b5aef6406855a941d51db3ae0d64266a638a23e759ddd8a1745b63  data/Data/String/NameChange.img
 4e06b64cfb8ee977b60c49376b146a0ac7c68e57969f2cf8b95e82b1451c194d  data/Data/String/Npc.img
 14eb10976f442e7a4dc9b2496b87fdc24b22df538cb9127fa418aee6ca6d4ecd  data/Data/String/Pet.img
