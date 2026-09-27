@@ -92,7 +92,7 @@ INSERT INTO `activity_monster_mob` (`config_id`, `mob_id`, `spawn_count`, `sort_
 INSERT INTO `activity_monster_mob` (`config_id`, `mob_id`, `spawn_count`, `sort_order`) VALUES (@current_activity_monster_id, 9400512, 1, 1);
 
 
---激战酷暑
+-- 激战酷暑
 -- =========================================================
 -- 简单难度
 -- =========================================================
