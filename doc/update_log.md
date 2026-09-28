@@ -1,6 +1,15 @@
 ## 20260928
 1. 修复复活节任务
 2. 烧烤任务
+### Server
+1. 迁移东方神州（CN）地图组：新增 37 张地图（红鸾宫/上海/大擂台，Map\Map7 段），配套 Tile/Obj/Back 素材、BGM、怪物 9619999、NPC 9310004-9310007 / 9310013-9310019 / 9310021 / 9330042 / 9900007，并补 String.wz 的 Npc/Mob 名称。
+2. 迁移任务 4100-4109（QuestInfo/Say/Check/Act 全套），随后去掉 4107、4108，换成原版兑换任务 8515。
+3. 地图 102000000 新增 NPC 9310000（勇士部落飞上海）与旁边的飞机元件。
+4. 任务冷却提示改中文：这个任务可在xx时xx分xx秒后重新开始。
+### Client
+1. client-dist 1.1.6：客户端 Data 同步新增上述地图、素材、任务、NPC、字符串（Data\Map、Data\Quest、Data\Npc、Data\String、Data\Sound\BgmCN 等）。
+2. client-dist 1.1.7：插件 Hook.dll 修复商城 / ITC 按账号性别过滤商品的问题（账号性别与角色性别不一致时买不到本性别装备）；config.ini 新增 MouseWheelCursorFix（滚轮不再把光标甩到右下角，默认开）。
+
 
 ## 20260927
 ### Server
