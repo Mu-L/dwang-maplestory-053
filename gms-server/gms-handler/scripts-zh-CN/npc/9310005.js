@@ -19,7 +19,7 @@ var text = '';
 
 function start() {
 	if(mapID == null) {
-		QuestObj = Java.type('org.gms.server.quest.Quest');
+		QuestObj = Java.type('org.gms.server.quest.QuestRepository');
 		quest = QuestObj.getInstance(QuestID);
 		mapID = cm.getMapId();
 		mapID_enter = mapID + 1;
@@ -58,7 +58,7 @@ function levelOut(){
 }
 function resetQuest(){
 	if (QuestMode && cm.isQuestCompleted(QuestID)) {
-		if(quest != null) quest.reset(cm.getPlayer());//重新开始任务
+		if(quest != null) cm.resetQuestSingle(quest);//重新开始任务
 	}
 }
 function level1() {

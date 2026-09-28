@@ -156,6 +156,15 @@ public class QuestUtils {
         }
     }
 
+    /**
+     * 只清除一个
+     * @param chr
+     * @param quest
+     */
+    public static void resetSingle(Character chr, QuestV2 quest) {
+        QuestStatus newStatus = new QuestStatus(quest.getId(), QuestStatus.Status.NOT_STARTED);
+        chr.updateQuestStatus(newStatus);
+    }
     public static void reset(Character chr, QuestV2 quest) {
         // bugfix: 如果是有parentQuest也全部改
         String parent = quest.getParent();

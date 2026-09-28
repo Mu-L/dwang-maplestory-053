@@ -30,7 +30,7 @@ public class IntervalChecker implements QuestRequirementChecker<IntervalRequirem
         if (check || check2) {
             return true;
         } else {
-            chr.message("This quest will become available again in approximately " + getIntervalTimeLeft(chr, reqData) + ".");
+            chr.message("这个任务可在" + getIntervalTimeLeft(chr, reqData) + "后重新开始。");
             return false;
         }
     }
@@ -53,15 +53,15 @@ public class IntervalChecker implements QuestRequirementChecker<IntervalRequirem
         switch (mode) {
             case 2:
                 int hours = (int) ((leftTime / HOURS.toMillis(1)));
-                str.append(hours + " hours, ");
+                str.append(hours + "小时");
 
             case 1:
                 int minutes = (int) ((leftTime / MINUTES.toMillis(1)) % 60);
-                str.append(minutes + " minutes, ");
+                str.append(minutes + "分");
 
             default:
                 int seconds = (int) (leftTime / 1000) % 60;
-                str.append(seconds + " seconds");
+                str.append(seconds + "秒");
         }
 
         return str.toString();

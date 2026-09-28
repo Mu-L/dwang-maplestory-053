@@ -65,6 +65,7 @@ import org.gms.server.partyquest.PartyQuest;
 import org.gms.server.partyquest.Pyramid;
 import org.gms.server.quest.QuestRepository;
 import org.gms.server.quest.QuestStatus;
+import org.gms.server.quest.QuestV2;
 import org.gms.service.ExtendDataService;
 import org.gms.util.*;
 import org.slf4j.Logger;
@@ -474,6 +475,15 @@ public class AbstractPlayerInteraction {
             qs.resetAllProgress();
             getPlayer().announceUpdateQuest(DelayedQuestUpdate.UPDATE, qs, false);
         }
+    }
+
+    public void resetQuestSingle(QuestV2 quest) {
+        QuestUtils.resetSingle(getPlayer(), quest);
+    }
+    public void resetQuest(QuestV2 quest) {
+
+        QuestUtils.reset(getPlayer(), quest);
+
     }
 
     public void resetQuestProgress(int id, int infoNumber) {

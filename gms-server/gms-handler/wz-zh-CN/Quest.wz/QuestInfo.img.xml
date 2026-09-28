@@ -6491,4 +6491,67 @@
     <string name="2" value="送#b#t04140100##k礼物给#b#p1002006##k。"/>
     <int name="area" value="50"/>
   </imgdir>
+  <imgdir name="4100">
+    <string name="name" value="变得暴躁的家畜"/>
+    <string name="0" value="最近#b#p9310010##k家家畜变得很暴躁，农活也变得很困难。去找找他吧。"/>
+    <string name="1" value="击退暴躁的家畜之后，去找#b#p9310010##k。\n\n#t4000189# #b#c4000189#/100#k \n#t4000190# #b#c4000190#/100#k"/>
+    <string name="2" value="击败了暴躁的家畜。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4101">
+    <string name="name" value="杨叔叔的介绍"/>
+    <string name="0" value="去找需要帮助的#b#p9310010##k吧。"/>
+    <string name="1" value="把#b#p9310010##k给的介绍书拿给#b#p9310008##k。 \n\n#t4031288 # #b#c4031288 #/1#k "/>
+    <string name="2" value="见到了#b#p9310008##k。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4102">
+    <string name="name" value="资格证明"/>
+    <string name="0" value="重新和#b#p9310008##k搭话吧。"/>
+    <string name="1" value="击退#r#o9600005##k和#r#o9600006##k，向#b#p9310008##k证明我的能力吧。\n\n#t4000191# #b#c4000191#/100#k\n#t4000192# #b#c4000192#/100#k"/>
+    <string name="2" value="向#b#p9310008##k证明了我的能力。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4103">
+    <string name="name" value="秘密任务"/>
+    <string name="0" value="重新和#b#p9310008##k搭话吧。"/>
+    <string name="1" value="带着#b#t4031289##k去找#b#p9310004##k，并打败#r#o9600009##k吧。\n得到#t4031227#的话，回去找#p9310008#。\n\n#t4031227# #b#c4031227#/1#k"/>
+    <string name="2" value="拯救了处于危险之中的上海。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4104">
+    <string name="name" value="摄影师赵先生的请求。"/>
+    <string name="0" value="去找#b#p9310012##k吧。"/>
+    <string name="1" value="据说去帮#b#p9310010##k农活的话，可以找到#b#p9310012##k丢失的物品……\n\n#t4031290# #b#c4031290#/1#k"/>
+    <string name="2" value="#b#p9310012##k找到了丢失的物品。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4105">
+    <string name="name" value="帮杨先生做农活"/>
+    <string name="0" value="去找#b#p9310010##k吧。"/>
+    <string name="1" value="去帮#b#p9310010##k吧。\n\n#t4000193# #b#c4000193#/100#k"/>
+    <string name="2" value="帮#b#p9310010##k做农活，得到了#b#p9310012##k丢失的物品。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4106">
+    <string name="name" value="丢失的照相机用三脚架"/>
+    <string name="0" value="丢了用在照相机上的三脚架，去找#b#p9310010##k吧。"/>
+    <string name="1" value="去帮#b#p9310010##k。\n\n#t4000192# #b#c4000192#/50#k"/>
+    <string name="2" value="帮助了#b#p9310010##k，并得到了#b#p9310012##k丢失的物品。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="4109">
+    <string name="name" value="郑警官的请求。"/>
+    <string name="0" value="去和#b#p9310005##k搭话吧。"/>
+    <string name="1" value="答应#b#p9310005##k的请求，击退#r#o9600008##k，并把证据拿给他吧。\n\n#t4000194# #b#c4000194#/50#k"/>
+    <string name="2" value="帮了#b#p9310005##k。"/>
+    <int name="area" value="45"/>
+  </imgdir>
+  <imgdir name="8515">
+    <string name="0" value="要去上海外滩的小摊。"/>
+    <string name="1" value="小摊老板吕，他最近生意不太好。所以他想更换一下销售的食品。他说如果我收集#b50个鸡爪和50个鸭蛋#k给他，他就交换给我#r30个玉米和30个糖葫芦#k。这对我来说也不算吃亏。\n\n#t4000187# #b#c4000187##k / 50 \n#t4000188# #b#c4000188##k / 50"/>
+    <string name="2" value="我收集鸡爪和鸭蛋给他后收到了玉米和糖葫芦。这些东西看起来非常好吃。我以后也要常常利用这个交易吧。"/>
+    <int name="area" value="42"/>
+    <string name="name" value="食品交换"/>
+  </imgdir>
 </imgdir>

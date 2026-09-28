@@ -2493,4 +2493,7 @@
     <imgdir name="9999999">
         <string name="name" value="黄金蛋"/>
     </imgdir>
+    <imgdir name="9619999">
+        <string name="name" value="gasangmob"/>
+    </imgdir>
 </imgdir>

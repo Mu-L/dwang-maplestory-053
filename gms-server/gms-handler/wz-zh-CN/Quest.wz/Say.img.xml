@@ -20230,4 +20230,233 @@
       </imgdir>
     </imgdir>
   </imgdir>
+0  <imgdir name="4100">
+    <imgdir name="0">
+      <string name="0" value="哎呦，我的腰啊。本来做农活就很累，加上家畜变得暴躁，真是累啊。很担心白忙活一场。你有时间帮帮我吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="谢谢。最近家畜变得很暴躁，跳出围栏毁掉了一些庄稼。你去击退那些毁掉庄稼的#r#o9600003##k和#r#o9600004##k，并带回#b#t4000189##k和#b#t4000190##k #b各100个#k作为证据吧。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="如果你改变主意的话，再来找我吧。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="我托付的事情怎么样了？带了这么多羊毛和山羊角，看来你已经教训了那些毁掉我庄稼的家伙们。做得好，做得好。非常感谢。"/>
+      <imgdir name="yes">
+        <string name="0" value="很了不起的年轻人啊。有一件事，相信你做得话，应该不难。可以帮忙的话，来找我吧。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="击退毁掉庄稼的#r#o9600003##k和#r#o9600004##k，作为证据带#b#t4000189##k和#b#t4000190##k #b各 100个#k吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4101">
+    <imgdir name="0">
+      <string name="0" value="你是上次帮我的那个年轻人啊。有一件事儿，你来处理的话应该会很简单，可以帮忙吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="谢谢。你需要做得那个事情，得去找上海外滩的#b#p9310008##k来了解。你带着我给你的介绍信去，他会告诉你详情的。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="如果你改变主意的话，再来找我吧。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="敬礼！找我有什么事吗？是#b#p9310010##k介绍您来得？请给我介绍信，我看一下。"/>
+      <imgdir name="yes">
+        <string name="0" value="我得确认一下介绍信。待会儿你再和我搭话，我会告诉你详细情况。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="npc">
+          <string name="0" value="把我给你的#b#t4031288##k拿给#b#p9310008##k吧。"/>
+        </imgdir>
+        <imgdir name="item">
+          <string name="0" value="连#b#t4031288##k都没有就来找我？"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="把我给你的#b#t4031288##k弄丢了？我再给你写一张，不要再丢了。"/>
+        <imgdir name="yes">
+          <string name="0" value="把我给你的#b#t4031288##k拿给#b#p9310008##k吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4102">
+    <imgdir name="1">
+      <string name="0" value="（啪啪啪！）真是了不起啊。居然能打败那些暴躁的家畜…… "/>
+      <imgdir name="yes">
+        <string name="0" value="我相信你有充分的能力来守卫上海。待会儿和我搭话，我会告诉你一个秘密。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="击退#r#o9600005##k和#r#o9600006##k，作为证据带#b#t4000191##k和#b#t4000192##k #b各100个#k吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+    <imgdir name="0">
+      <string name="0" value="敬礼！现在上海因为暴躁的家畜捣乱，非常危险。所以杨叔推荐你来拯救这场危机。"/>
+      <string name="1" value="但是，仅凭#b#p9310010##k给的介绍信，还不能完全相信您有守卫这里的能力。你可以证明你有能力守卫这里吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="最近家畜变得很暴躁，不仅破坏庄稼，还会袭击居民。击退变得暴躁的#r#o9600005##k和#r#o9600006##k，并带回#b#t4000191##k和#b#t4000192##k #b各100个#k作为证据吧。如果能够完成的话，我们就相信你。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="看来你没有自信啊。准备好了再来找我们吧。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4103">
+    <imgdir name="0">
+      <string name="0" value="这件事情是机密，任何人都不知道此事。你可以保守这个秘密并执行任务吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="事实上，这个地方有条存活了千年的#r#o9600009##k。那个蜈蚣有操纵家畜的超能力。他利用那个超能力让家畜捣乱，所以我们警方抓住了那个蜈蚣，并把它隔离了。"/>
+        <string name="1" value="但是之后家畜们的捣乱并没有停止，经过调查才知道，#r#o9600009##k的超能力是源自#b#t4031227##k。但是仅凭我们的力量无法拿到#b#t4031227##k。"/>
+        <string name="2" value="带着我给您的#b#t4031289##k去找#b#p9310004##k，击倒#r#o9600009##k之后，再把#b#t4031227##k拿给我们吧。敬礼！"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="看来你没有自信啊。如果你改变主意的话，再来找我吧。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="终于把那恐怖的#r#o9600009##k击退了，而且也把#b#t4031227##k带过来了。该怎么报答你拯救上海的大恩呢…… "/>
+      <imgdir name="yes">
+        <string name="0" value="多亏你帮忙，上海才得以平安。非常感谢。也希望您旅途愉快。请走好。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="npc">
+          <string name="0" value="带着我给您的#b#t4031289##k去找#b#p9310004##k，击倒#r#o9600009##k之后，再把#b#t4031227##k拿给我们吧。"/>
+        </imgdir>
+        <imgdir name="item">
+          <string name="0" value="带着我给您的#b#t4031289##k去找#b#p9310004##k，击倒#r#o9600009##k之后，再把#b#t4031227##k拿给我们吧。"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="丢了我给您的#b#t4031289##k？我再给您一张，以后不要再丢了。"/>
+        <imgdir name="yes">
+          <string name="0" value="带着我给您的#b#t4031289##k去找#b#p9310005##k，击倒#r#o9600009##k之后，再把#b#t4031227##k拿给我们吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4104">
+    <imgdir name="0">
+      <string name="0" value="（嚓喀嚓咔）可以转个身吗～ 好！（咔嚓喀嚓）你是职业模特吗？身材真好。"/>
+      <string name="1" value="有什么事儿吗？哦～ 需要证件照？但是现在无法拍证件照。不久前去野外拍照的时候，把三脚架弄丢了。因为还有其他客人等着，您能不能帮忙找回那个三脚架呢？"/>
+      <imgdir name="yes">
+        <string name="0" value="一直往西走，有一个分岔路口，我是在那儿丢的。好象#b#p9310010##k帮我保管好了，去帮我拿一下#t4031290#吧。"/>
+        <string name="1" value="对了！帮#b#p9310010##k做一下农活吧。本来农活就很累，加上帮着守卫#b#t4031290##k，肯定有很多农活没干完。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="看来你不想帮忙哦。如果你改变主意的话，再来找我吧。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="找回了我丢的东西了？好，那拍照吧。脸稍微转一下，茄子～ 真的很像职业模特哦。"/>
+      <imgdir name="yes">
+        <string name="0" value="那么，走好～ 需要拍照的话，随时来找我。请走好哦。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="请帮我把由#b#p9310010##k保管的#b#t4031290##k拿回来吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4105">
+    <imgdir name="0">
+      <string name="0" value="来这偏僻的乡下，有什么事吗？来找#b#p9310012##k的#b#t4031290##k？因为要保管那个东西，我的农活都耽误了。你帮我做些农活的话，我就把这个给你，你愿意帮我吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="好的。希望你把牛带着的#b#t4000193##k收集过来。需要维修出故障的#b#t4000193##k。帮我收集#r#o9600007##k带着的#b#t4000193#100个#k吧。那就拜托你了。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="不好意思，#b#t4031290##k不能给你，如果你改变主意的话，再来找我吧。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="哎呦～ 不像一般的年轻人，你很塌实啊。这么快就把东西收集过来了。"/>
+      <imgdir name="yes">
+        <string name="0" value="感谢你帮忙。我给你的#b#t4031290##k，不要丢了。拿给#k #b#p9310012##k吧。请走好。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="npc">
+          <string name="0" value="不要丢了我给你的#b#t4031290##k，拿给#k #b#p9310012##k吧。"/>
+        </imgdir>
+        <imgdir name="item">
+          <string name="0" value="给我带#b#t4000193#100个#k吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4106">
+    <imgdir name="1">
+      <string name="0" value="怎么样？农活很累吧？按照约定，我把丢失的东西给你。"/>
+      <imgdir name="yes">
+        <string name="0" value="这次千万不要丢了#b#t4031290##k，拿给#k #b#p9310012##k。请走好。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="npc">
+          <string name="0" value="不要丢了我给你的#b#t4031290##k，拿给#k #b#p9310012##k吧。"/>
+        </imgdir>
+        <imgdir name="item">
+          <string name="0" value="给我带#b#t4000192#50个#k吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+    <imgdir name="0">
+      <string name="0" value="我知道你会回来找我的。是因为丢了我给你的#b#t4031290##k了吧？我都说了多少遍了…… 我在地里干活的时候发现了你丢的#b#t4031290##k。"/>
+      <string name="1" value="幸好我发现了，不然该出事了？如果你帮我个忙，我就吧#b#t4031290##k还给你，怎么样？"/>
+      <imgdir name="yes">
+        <string name="0" value="#b#t4000193##k已经修好了。但是#r#o9600006##k鼻子上的#b#t4000192##k好像坏了，老是掉链。帮我拿#r#o9600006##k的#b#t4000192##k #b50个#k吧。拜托你了。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="不能把#b#t4031290##k给你。如果你改变主意的话，再来找我吧。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="4109">
+    <imgdir name="1">
+      <string name="0" value="感谢你的协助。希望你可以尽力完成秘密任务。"/>
+      <imgdir name="yes">
+        <string name="0" value="准备好了的话，告诉我一声，我把你送到其他区域。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="击退#r#o9600008##k，拿来#b#t4000194# 50个#k吧。"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+    <imgdir name="0">
+      <string name="0" value="敬礼！要做一些检查！这里是禁区，闲人免进。没有许可的人是不允许进入的！什么？已经获得许可了？"/>
+      <string name="1" value="哦…… 刚刚接到信息。您是特别行动小组的人啊。看来是位了不起的人啊，如果您帮我个小忙的话，我就让您通过。您可以帮我吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="这里的#r#o9600008##k很暴躁，站岗并不容易。击退#r#o9600008##k，并带#b#t4000194# 50个#k作为证据的话，会对执行公务大有益处。那就拜托你了。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="如果不协助执行公务的话，就不能让你通过。请回吧。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8515">
+    <imgdir name="0">
+      <string name="0" value="我是在这里销售小吃的。但最近销售不太好。我想要卖点别的。怎么样？你能帮我吗？"/>
+      <imgdir name="no">
+        <string name="0" value="是吗？这生意你也不吃亏啊。。。可惜啊。。。"/>
+      </imgdir>
+      <imgdir name="yes">
+        <string name="0" value="好的。如果你收集#b50个鸡爪和50个鸭蛋#k来，我就给你#r玉米和糖葫芦各30个#k。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="我是在这里卖小吃的。。。最近生意太难做了。。。"/>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="你还没收集齐了#b鸡爪和鸭蛋各50个#k吧。这对你也不算很麻烦啊。"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="yes">
+        <string name="0" value="谢谢你。我就给你我的玉米和糖葫芦。这些小吃对你也很有用的吧。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
 </imgdir>

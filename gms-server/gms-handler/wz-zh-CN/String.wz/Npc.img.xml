@@ -36702,4 +36702,7 @@
         <string name="n0" value="你好，我叫浪漫~。"/>
         <string name="n1" value="如要兑换药水交换券，就来找我。"/>
     </imgdir>
+    <imgdir name="9900007">
+        <string name="name" value="冒险岛管理员2"/>
+    </imgdir>
 </imgdir>

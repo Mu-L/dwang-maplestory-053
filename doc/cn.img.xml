@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="cn.img" indent="2" media="NONE">
+  <imgdir name="700000000">
+    <string name="streetName" value="红鸾宫"/>
+    <string name="mapName" value="红鸾宫入口"/>
+  </imgdir>
+  <imgdir name="700000100">
+    <string name="streetName" value="红鸾宫"/>
+    <string name="mapName" value="红鸾殿"/>
+  </imgdir>
+  <imgdir name="700000101">
+    <string name="streetName" value="红鸾宫"/>
+    <string name="mapName" value="孤星殿"/>
+  </imgdir>
+  <imgdir name="700000200">
+    <string name="streetName" value="红鸾宫"/>
+    <string name="mapName" value="宴客堂"/>
+  </imgdir>
+  <imgdir name="701000000">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="上海外滩"/>
+  </imgdir>
+  <imgdir name="701000100">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="上海临时机场"/>
+  </imgdir>
+  <imgdir name="701000200">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="上海豫园"/>
+  </imgdir>
+  <imgdir name="701000201">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="冒险大擂台场1"/>
+  </imgdir>
+  <imgdir name="701000202">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="冒险大擂台场2"/>
+  </imgdir>
+  <imgdir name="701000203">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="冒险大擂台场3"/>
+  </imgdir>
+  <imgdir name="701000210">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="冒险大擂台入口"/>
+  </imgdir>
+  <imgdir name="701010000">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="上海郊外"/>
+  </imgdir>
+  <imgdir name="701010100">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="上海北部平原"/>
+  </imgdir>
+  <imgdir name="701010200">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="上海北部小山"/>
+  </imgdir>
+  <imgdir name="701010300">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="徐州岔道"/>
+  </imgdir>
+  <imgdir name="701010310">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="中原山丘地带1"/>
+  </imgdir>
+  <imgdir name="701010320">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="中原山丘地带2"/>
+  </imgdir>
+  <imgdir name="701010321">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="黑羊的领土"/>
+  </imgdir>
+  <imgdir name="701010322">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="通道"/>
+  </imgdir>
+  <imgdir name="701010323">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="危险的山丘"/>
+  </imgdir>
+  <imgdir name="701010400">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="徐州平原1"/>
+  </imgdir>
+  <imgdir name="701010500">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="徐州平原2"/>
+  </imgdir>
+  <imgdir name="701010600">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="徐州平原3"/>
+  </imgdir>
+  <imgdir name="780000000">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台1"/>
+  </imgdir>
+  <imgdir name="780000001">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台2"/>
+  </imgdir>
+  <imgdir name="780000002">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台3"/>
+  </imgdir>
+  <imgdir name="780000003">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台4"/>
+  </imgdir>
+  <imgdir name="780000004">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台5"/>
+  </imgdir>
+  <imgdir name="780000005">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台6"/>
+  </imgdir>
+  <imgdir name="780000006">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="boss怪物冒险大擂台7"/>
+  </imgdir>
+  <imgdir name="781000000">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="多数怪物大擂台1"/>
+  </imgdir>
+  <imgdir name="781000001">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="多数怪物大擂台2"/>
+  </imgdir>
+  <imgdir name="781000002">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="多数怪物大擂台3"/>
+  </imgdir>
+  <imgdir name="782000000">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="障碍比赛大擂台1"/>
+  </imgdir>
+  <imgdir name="782000001">
+    <string name="streetName" value="东方神州"/>
+    <string name="mapName" value="障碍比赛大擂台2"/>
+  </imgdir>
+</imgdir>

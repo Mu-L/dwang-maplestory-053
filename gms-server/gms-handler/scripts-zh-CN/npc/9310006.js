@@ -18,7 +18,7 @@ function start() {
     if(em.getName() != EventName) {
         cm.sendOkLevel('','由于某种神秘力量，暂时无法送你过去，请联系管理员处理。');
     } else {
-        cm.sendSelectLevel('',`敬礼！\r\n你好，#e#b#h ##k#n，我是#b#e#p${cm.getNpc()}##k#n\r\n\r\n#L0##b秘密任务#l\r\b\r\n#L1#离开#l#k`);
+        cm.sendSelectLevel('',`敬礼！你好，#e#b#h ##k#n；我是#b#e#p${cm.getNpc()}##k#n\r\n#L0##b秘密任务#l\r\b#L1#离开#l#k`);
     }
 }
 
