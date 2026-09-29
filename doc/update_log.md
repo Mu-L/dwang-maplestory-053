@@ -11,6 +11,7 @@
 2. client-dist 1.1.9：17 张网吧地图 + 157 个物品的 img 与名字（Data\Map、Data\Item、Data\Character、Data\String\Item.img）。
 3. client-dist 1.1.9 里同时带上 100000000 / 200000000 / 220000000 三张城镇地图 img（红鸾宫入口 NPC 的召唤数据）。
 4. 修 Quest img 头部字段：OrzRepacker 保存时把 offset 0x0C 的字段算大，客户端一启动就 E_POINTER（-2147467261）；已把 Check/Act/QuestInfo/Say 四个文件该字段改回迁移前的值。
+5. client-dist 1.1.10：修"开着 UI 进商城再出来，窗口偏移甚至跑到屏幕外"（装备/技能/物品/小地图等，开着任务助手也会触发）。原因：商城期间客户端把游戏窗口挪到屏幕外，销毁时 `CWnd::Destroy [sub_750C0D]` → 虚表 slot 4 `sub_6DD737` → `CConfig::SetUIWndPos [0x471A38]` 把"屏幕外坐标"写进了窗口位置表，而重建窗口时（如 `CUIMiniMap::Init [0x66507A]`）该值被当**设计坐标**用，于是每进一次商城就多叠一层偏移，最后整片 UI 跑出屏幕；小地图每个对象只建一次窗口，所以不会自愈。插件在写表处丢弃屏幕外坐标（槽位保留上一次正常值），并给小地图建窗加了屏幕外兜底（回客户端默认的 8,8）；另加 `DebugUiLayout` 开关的文件日志 `uilayout_trace.log`（默认关）便于以后排查排版问题。
 
 ## 20260928
 1. 修复复活节任务
