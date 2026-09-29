@@ -10,6 +10,7 @@
 1. client-dist 1.1.8：任务 8516-8527 + NPC 9330015 + 4 张地图召唤。
 2. client-dist 1.1.9：17 张网吧地图 + 157 个物品的 img 与名字（Data\Map、Data\Item、Data\Character、Data\String\Item.img）。
 3. client-dist 1.1.9 里同时带上 100000000 / 200000000 / 220000000 三张城镇地图 img（红鸾宫入口 NPC 的召唤数据）。
+4. 修 Quest img 头部字段：OrzRepacker 保存时把 offset 0x0C 的字段算大，客户端一启动就 E_POINTER（-2147467261）；已把 Check/Act/QuestInfo/Say 四个文件该字段改回迁移前的值。
 
 ## 20260928
 1. 修复复活节任务

@@ -178,7 +178,12 @@ public class AbstractPlayerInteraction {
     }
 
     public void warpParty(int id, int portalId, int fromMinId, int fromMaxId) {
-        for (Character mc : this.getPlayer().getPartyMembersOnline()) {
+        List<Character> partyMembersOnline = this.getPlayer().getPartyMembersOnline();
+        if (partyMembersOnline.isEmpty()) {
+            dropMessage(ServerMsgType.Pink_Text.getType(), "移动失败，当前未找到队伍，");
+            return;
+        }
+        for (Character mc : partyMembersOnline) {
             if (mc.isLoggedInWorld()) {
                 if (mc.getMapId() >= fromMinId && mc.getMapId() <= fromMaxId) {
                     mc.changeMap(id, portalId);

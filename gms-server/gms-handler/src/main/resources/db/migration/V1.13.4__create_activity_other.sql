@@ -15,7 +15,7 @@ INSERT INTO `drop_data_global` (`continent`, `itemid`, `minimum_quantity`, `maxi
 INSERT INTO `drop_data_global` (`continent`, `itemid`, `minimum_quantity`, `maximum_quantity`, `questid`, `chance`, `comments`) VALUES (-1, 4031421, 1, 1, 8823, 50000, '感恩节');
 
 -- 刷新周期 半个小时把
-INSERT INTO `activity_monster_config` (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`) VALUES ('THANKE_GIVING_ACTIVITY', 'org.gms.activity.ThanksgivingEvent', '感恩节活动', 1, 1800, 6, '【{event}】{monsters} 出现在了「{map}」，请速去攻略！', '玩家进行感恩节活动，换图重刷');
+INSERT INTO `activity_monster_config` (`event_key`, `event_class`, `name`, `enabled`, `interval_sec`, `notice_type`, `notice_text`, `remark`) VALUES ('THANKE_GIVING_ACTIVITY', 'org.gms.activity.ThanksgivingEvent', '感恩节活动', 1, 600, 6, '【{event}】{monsters} 出现在了「{map}」，请速去攻略！', '玩家进行感恩节活动，换图重刷');
 SET @current_activity_monster_id = LAST_INSERT_ID();
 
 INSERT INTO `activity_monster_mob` (`config_id`, `mob_id`, `spawn_count`, `sort_order`) VALUES (@current_activity_monster_id, 9400505, 10, 0);

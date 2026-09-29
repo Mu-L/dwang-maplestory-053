@@ -10,14 +10,14 @@
 version=1.1.9
 tag=client-v1.1.9
 built=2026-09-29
-notes=数据：048 网吧/premium 地图 17 张 + 048 物品 157 个 + 红鸾宫入口 NPC 9300000/9300001/9300002 召唤（跳过大擂台、双倍爆率频道、洗点、封印之锁）
+notes=数据：048 网吧地图 17 张 + 物品 157 个 + 红鸾宫入口 NPC（天空之城 9300001 挪位避重叠）；修 Quest img 头部字段导致的客户端 E_POINTER
 client_exe=GMSv53.exe,MapleStory.exe,GMS053.exe,MapleStoryV053.exe,MapleStory-sorce.exe
 client_exe_strict=0
 keep_existing=config.ini
 backup_keep=5
 client_exe_size=5439488
 client_exe_sha256=f4ac21ac18b6bd6a8ef16077aec2e9727468f578998e917f6679b5fe26ce23d8
-manifest_built=2026-09-29 19:03:59
+manifest_built=2026-09-29 20:57:42
 file_count=1188
 plugin_count=6
 data_count=1182

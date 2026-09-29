@@ -1,12 +1,10 @@
 ﻿/*
-梦之岛冒险到079 QQ338150游戏服务端
- 脚本：结婚殿堂
+ * NPC 名称: 守卫兵 天长 (9300007)
+ * 功能: 红鸾宫大门卫兵 / 婚礼地图传送
+ * 架构: OdinMS / BeiDou
  */
 
-var status = 0
-var victim;
-var  ring = 1112001; 
-     
+var status = 0;
 
 function start() {
     action(1, 0, 0);
@@ -21,58 +19,47 @@ function action(mode, type, selection) {
         cm.dispose();
         return;
     }
+
     if (status == 1) {
-        cm.sendSimple("我是红鸾宫的守卫，你是要进去吗？\r\n#b" +
-                "#L1#进入红鸾宫#l\r\n" +
-                "#L2#我想回去了#l");
+        cm.sendSimple("我是专职守卫红鸾宫大门的卫兵！想要结婚的恋人，可以从这里进去。\r\n不过……要结婚，还需要不少的钱啊。。。呵呵。\r\n\r\n#b" +
+            "#L1#进入红鸾宫#l\r\n" +
+            "#L2#我想回去了#l");
     } else if (status == 2) {
         if (selection == 1) {
-            /*if (cm.getParty() == null) {
-                cm.sendNext("请与你的另一半组队后找我。");
-                cm.dispose();
-                return;
-            }
-            if (!cm.isLeader()) {
-                cm.sendNext("请让队长与我对话。");
-                cm.dispose();
-                return;
-            }
-
-            var gender = cm.getPlayer().getGender();
-            var mapId = cm.getPlayer().getMapId();
-            var next = true;
-            var party = cm.getPlayer().getParty().getMembers();
-            var it = party.iterator();
-            /*while (it.hasNext()) {
-                var cPlayer = it.next();
-                victim = cm.getPlayer().getMap().getCharacterById(cPlayer.getId());
-                if (victim.getId() != cm.getPlayer().getId() && (party.size() > 2 || victim == null || victim.getMapId() != mapId || victim.getGender() == gender)) {
-                    next = false;
-                    break;
-                }
-            }*
-
-            if (!next) {
-                cm.sendNext("请确认您跟您的的另外一半在这一张地图、不同性別、并且都在线以及队伍中没有其他人");
-                cm.dispose();
-                return;
-            }
-			
-            if (!victim.hasEquipped(ring) || !cm.getPlayer().hasEquipped(ring)) {
-                cm.sendNext("您或您的另一半没有装备#v" + ring + "##z" + ring + "#哦");
-                cm.dispose();
-                return;
-            }*/
-            //cm.sendYesNo("确定是否要与" + victim.getName() + "结婚吗?");
-			cm.sendYesNo("你要进去吗?");
+            cm.sendYesNo("里面的婚礼筹备好了吗？你确定现在就要进去吗？");
         } else if (selection == 2) {
-            cm.warpParty(100000000);
+            // 只在要回去时读取保存的旧地图，若没有记录则默认送回射手村
+            var savedMap = getSavedMap();
+            if (savedMap <= 0) {
+                savedMap = 100000000;
+            }
+            cm.sendNext("好的，我这就送你回之前的地方。以后要结婚的时候随时再来吧。。。呵呵。");
+            cm.warp(savedMap, 0);
             cm.dispose();
         }
     } else if (status == 3) {
-		cm.warpParty(700000100);
+        // 直接传送队伍进红鸾宫，不干涉地图记录
+        cm.warpParty(70000100);
         cm.dispose();
     } else {
         cm.dispose();
     }
+}
+
+// 读取上次保存的地图记录（例如 WORLDTOUR 标记）
+function getSavedMap() {
+    var map = cm.getPlayer().getSavedLocation("WORLDTOUR");
+    return normalizeMapId(map);
+}
+
+// 格式化与合法性校验
+function normalizeMapId(map) {
+    if (map === null || map === undefined) {
+        return -1;
+    }
+    map = Number(map);
+    if (isNaN(map) || map <= 0 || map == 999999999) {
+        return -1;
+    }
+    return map;
 }
