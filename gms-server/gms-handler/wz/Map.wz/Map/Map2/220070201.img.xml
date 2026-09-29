@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="220070201.img">
     <imgdir name="info">
         <int name="version" value="10"/>
@@ -903,6 +903,16 @@
             <int name="cy" value="1263"/>
             <int name="rx0" value="-1347"/>
             <int name="rx1" value="-194"/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="type" value="n"/>
+            <string name="id" value="9300014"/>
+            <int name="x" value="-745"/>
+            <int name="y" value="-878"/>
+            <int name="fh" value="3"/>
+            <int name="cy" value="-468"/>
+            <int name="rx0" value="-795"/>
+            <int name="rx1" value="-703"/>
         </imgdir>
     </imgdir>
     <imgdir name="reactor">

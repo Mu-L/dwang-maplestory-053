@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="Say.img" indent="2" media="NONE">
   <imgdir name="1000">
     <imgdir name="1">
@@ -20456,6 +20456,294 @@
       </imgdir>
       <imgdir name="yes">
         <string name="0" value="谢谢你。我就给你我的玉米和糖葫芦。这些小吃对你也很有用的吧。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8516">
+    <imgdir name="0">
+      <string name="0" value="您好。我是天上的财神。最近听说我在天上的朋友们也跑到地上来了，但我在这里要做的事情太多。不能去跟他们打招呼。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。听说我的朋友在魔法密林附近。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，我会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="我是爱国志士屈原。听说冒险岛最近要搞2周年庆，所以我特地从天上下来看看。哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？找我有什么事情吗？"/>
+        <string name="1" value="哦。。。财神的信啊，自从几个月前他为了祝福这里的人们来到冒险岛后，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="嗯。你找我有什么事情吗？我是爱国志士屈原，我听说有庆祝冒险岛2周年的活动，这次特意下来看看的。"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你写一封，你不要再丢了啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8517">
+    <imgdir name="0">
+      <string name="0" value="那请你回去替我问候一下财神吧。他也很想知道我的消息吧。哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="好。你回去找财神，他一定会给你很好的酬劳吧。哈哈。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="嗯？为什么？你有别的急事吗？那没办法。。。但你回去找财神，他肯定会给你很好的酬劳的。。。真可惜。。。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="哦。。。听说这次我的朋友从天上下来了。但因为有冒险岛2周年庆祝活动，我无法去找他。。。很痛苦。。。"/>
+      <imgdir name="yes">
+        <string name="0" value="哦。你已经帮我把信转交给我朋友了吗？很谢谢你。那我给你报酬吧。哈哈。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8518">
+    <imgdir name="0">
+      <string name="0" value="您您好。我是天上的财神。最近听说我在天上的朋友们也跑到地上来了，但我在这里要做的事情太多。不能去跟他们打招呼。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。听说我的朋友在上海外滩附近。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，我会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="你好。我叫管仲。先自我介绍一下，我是春秋时代帮桓公把齐国建设为最强国的人。哈哈。认识你很高兴。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。财神的信啊，自从几个月前他为了祝福这里的人们来到冒险岛后，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="嗯。你找我有什么事情吗？我是齐国的宰相管仲，我听说有庆祝冒险岛2周年的活动，这次特意下来看看。"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你写一封，你不要再丢了啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8519">
+    <imgdir name="0">
+      <string name="0" value="那请你回去替我问候一下财神吧。他也很想知道我的消息吧。哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="好。你回去找财神，他一定会给你很好的酬劳吧。哈哈。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="嗯？为什么？你有别的急事吗？那没办法。。。但你回去找财神，他肯定会给你很好的酬劳的。。。真可惜。。。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="哦。。。听说这次我的朋友从天上下来了。但因为有冒险岛2周年庆祝活动，我无法去找他。。。很痛苦。。。"/>
+      <imgdir name="yes">
+        <string name="0" value="哦。你已经帮我把信转交给我朋友了吗？很谢谢你。那我给你报酬吧。哈哈。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8520">
+    <imgdir name="0">
+      <string name="0" value="您好。我是天上的财神。最近听说我在天上的朋友们也跑到地上来了，但我在这里要做的事情太多。不能去跟他们打招呼。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。听说我的朋友在童话村附近。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，我会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="你好。我是司马迁，我写了一套历史书。名字是《史记》。你听说过吗？"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。财神的信啊，自从几个月前他为了祝福这里的人们来到冒险岛后，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="嗯。你找我有什么事情吗？我是汉朝的历史学家，我听说有庆祝冒险岛2周年的活动，这次特意下来看看。"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你写一封，你不要再丢了啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8521">
+    <imgdir name="0">
+      <string name="0" value="那请你回去替我问候一下财神吧。他也很想知道我的消息吧。哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="好。你回去找财神，他一定会给你很好的酬劳吧。哈哈。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="嗯？为什么？你有别的急事吗？那没办法。。。但你回去找财神，他肯定会给你很好的酬劳的。。。真可惜。。。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="哦。。。听说这次我的朋友从天上下来了。但因为有冒险岛2周年庆祝活动，我无法去找他。。。很痛苦。。。"/>
+      <imgdir name="yes">
+        <string name="0" value="哦。你已经帮我把信转交给我朋友了吗？很谢谢你。那我给你报酬吧。哈哈。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8522">
+    <imgdir name="0">
+      <string name="0" value="您好。我是天上的财神。最近听说我在天上的朋友们也跑到地上来了，但我在这里要做的事情太多。不能去跟他们打招呼。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。听说我的朋友在玩具城迷宫里。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，我会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="您好。我叫张良。我是帮助高祖建立大汉的谋士。也有人叫我张子房。认识你很高兴。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。财神的信啊，自从几个月前他为了祝福这里的人们来到冒险岛后，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="stop">
+        <imgdir name="item">
+          <string name="0" value="嗯。你找我有什么事情吗？我是大汉谋士张良张子房，我听说有庆祝冒险岛2周年的活动，这次特意下来看看。"/>
+        </imgdir>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你了信件，你不要再丢是啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8523">
+    <imgdir name="0">
+      <string name="0" value="那请你回去替我问候一下财神吧。他也很想知道我的消息吧。哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="好。你回去找财神，他一定会给你很好的酬劳吧。哈哈。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="嗯？为什么？你有别的急事吗？那没办法。。。但你回去找财神，他肯定会给你很好的酬劳的。。。真可惜。。。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="哦。。。听说这次我的朋友从天上下来了。但因为有冒险岛2周年庆祝活动，我无法去找他。。。很痛苦。。。"/>
+      <imgdir name="yes">
+        <string name="0" value="哦。你已经帮我把信转交给我朋友了吗？很谢谢你。那我给你报酬吧。哈哈。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8524">
+    <imgdir name="0">
+      <string name="0" value="您好。我是屈原。迎国庆原来要跟财神打招呼，但我在这里要做的事情太多。不能去跟他们打招呼。。。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。财神他在金银岛的明珠港。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，财神会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+    <imgdir name="1">
+      <string name="0" value="您好。我是天上的财神。哈哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。 这是屈原的信啊，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你了信件，你不要再丢是啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8525">
+    <imgdir name="1">
+      <string name="0" value="您好。我是天上的财神。哈哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。 这是管仲的信啊，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你了信件，你不要再丢是啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+    <imgdir name="0">
+      <string name="0" value="您好。我是管仲。迎国庆原来要跟财神打招呼，但我在这里要做的事情太多。不能去跟他们打招呼。。。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。财神他在金银岛的明珠港。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，财神会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8526">
+    <imgdir name="1">
+      <string name="0" value="您好。我是天上的财神。哈哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。 这是司马迁的信啊，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你了信件，你不要再丢是啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+    <imgdir name="0">
+      <string name="0" value="您好。我是司马迁。迎国庆原来要跟财神打招呼，但我在这里要做的事情太多。不能去跟他们打招呼。。。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。财神他在金银岛的明珠港。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，财神会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
+      </imgdir>
+    </imgdir>
+  </imgdir>
+  <imgdir name="8527">
+    <imgdir name="1">
+      <string name="0" value="您好。我是天上的财神。哈哈哈。"/>
+      <imgdir name="yes">
+        <string name="0" value="嗯？你是谁？跟我有什么事情吗？"/>
+        <string name="1" value="哦。。。 这是张良的信啊，我好久没见他了啊。非常感谢。"/>
+      </imgdir>
+      <imgdir name="lost">
+        <string name="0" value="嗯？你把我的信弄丢了？这是给我朋友的，你应该小心保管啊！"/>
+        <imgdir name="yes">
+          <string name="0" value="我再给你了信件，你不要再丢是啊！"/>
+        </imgdir>
+      </imgdir>
+    </imgdir>
+    <imgdir name="0">
+      <string name="0" value="您好。我是张良。迎国庆原来要跟财神打招呼，但我在这里要做的事情太多。不能去跟他们打招呼。。。"/>
+      <string name="1" value="哼。。。我觉得你能帮助我，怎么样？你能不能帮我把信交给我的朋友？"/>
+      <imgdir name="yes">
+        <string name="0" value="那太好了。这里是我写的信。请你把它转交给我的朋友吧。财神他在金银岛的明珠港。。。"/>
+      </imgdir>
+      <imgdir name="no">
+        <string name="0" value="是吗？。。。那没办法。你要是帮我，财神会给你很好的报酬啊。你以后改变想法随时都可以来找我。"/>
       </imgdir>
     </imgdir>
   </imgdir>
