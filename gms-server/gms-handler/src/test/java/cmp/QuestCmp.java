@@ -1,5 +1,6 @@
 package cmp;
 
+import io.micrometer.common.util.StringUtils;
 import org.gms.provider.Data;
 import org.gms.provider.DataTool;
 import org.gms.provider.wz.XMLWZFile;
@@ -35,7 +36,11 @@ public class QuestCmp {
             }
         }
         needAddQuestIds.stream().sorted().forEach(id -> {
-            needAddMap.put(id, questNames48.get(id));
+            String questName = questNames48.get(id);
+            if (!StringUtils.isEmpty(questName)) {
+                needAddMap.put(id, questName);
+            }
+            needAddMap.put(id, questName);
         });
 
         needAddMap.forEach((id, str) -> {

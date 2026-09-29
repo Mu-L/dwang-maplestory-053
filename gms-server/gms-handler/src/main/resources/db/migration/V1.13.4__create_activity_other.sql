@@ -33,3 +33,6 @@ INSERT INTO `drop_data_global` (`continent`, `itemid`, `minimum_quantity`, `maxi
 
 -- Spot 8869-8870
 INSERT INTO `drop_data_global` (`continent`, `itemid`, `minimum_quantity`, `maximum_quantity`, `questid`, `chance`, `comments`) VALUES (-1, 4031542, 1, 1, 8869, 10000, 'quest_8869');
+
+-- 官方自定义春节新年活动 获取红包
+INSERT INTO `drop_data_global` (`continent`, `itemid`, `minimum_quantity`, `maximum_quantity`, `questid`, `chance`, `comments`) VALUES (-1, 4031249, 1, 1, 8208, 1000, 'quest_8208');

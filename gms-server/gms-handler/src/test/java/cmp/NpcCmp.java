@@ -1,6 +1,7 @@
 package cmp;
 
 
+import io.micrometer.common.util.StringUtils;
 import org.gms.provider.*;
 import org.gms.provider.wz.XMLWZFile;
 import org.gms.util.PathUtils;
@@ -43,7 +44,12 @@ public class NpcCmp {
             }
         }
         needAddIds.stream().sorted().forEach( id -> {
-            needAddMap.put(id, cnNames.get(id));
+
+            String value = cnNames.get(id);
+            if (!StringUtils.isEmpty(value)) {
+                needAddMap.put(id, value);
+            }
+            needAddMap.put(id, value);
         });
 
         needAddMap.forEach((id, str) -> {

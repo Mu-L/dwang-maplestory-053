@@ -1,6 +1,8 @@
-package cmp;
+package cmp.item;
 
 
+import cmp.StringCmp;
+import io.micrometer.common.util.StringUtils;
 import org.gms.provider.Data;
 import org.gms.provider.DataTool;
 import org.gms.provider.wz.XMLWZFile;
@@ -13,13 +15,13 @@ import java.nio.file.Path;
 import java.util.*;
 
 /**
- * ID与常量生成器（支持新旧WZ格式兼容）
+ * item查询是否存在
  *
  * @author dwang
  * @version 2.0
  * @since 2026/9/1 15:30
  */
-public class StringCmp {
+public class ItemCmp {
 
     private static final String DEFAULT_PACKAGE = "string.gen";
 
@@ -27,95 +29,103 @@ public class StringCmp {
         Path root = PathUtils.getRootPath("bms");
         Path cnPath =      Path.of(root + "\\gms-server\\gms-handler\\wz-zh-CN\\String.wz");
         Path enPath =      Path.of(root + "\\gms-server\\gms-handler\\wz\\String.wz");
-        Path pathcms48 =      Path.of(root + "\\cms48\\String.wz");
+        Path cnPath48 =      Path.of(root + "\\cms48\\String.wz");
 
+        // 3. 处理物品模块 (适配新旧版本格式差异)
+        // 新版：Direct Img (Cash.img, Consume.img, Etc.img 等)
+        // 旧版：Item.img -> SubNode (Cash, Con, Etc 等)
+        List<ItemTask> itemTasks = List.of(
+                new ItemTask("Cash.img", "Item.img", "Cash", "Cash"),
+                new ItemTask("Consume.img", "Item.img", "Con", "Con"),
+                new ItemTask("Ins.img", "Item.img", "Ins", "Ins"),
+                new ItemTask("Pet.img", "Item.img", "Pet", "Pet"),
+                new ItemTask("Etc.img", "Item.img", "Etc", "Etc")
+        );
 
-        Path outputDir =   Path.of(root + "\\gms-server\\gms-handler\\src\\test\\java\\string\\gen");
-        Path cnQuestPath = Path.of(root + "\\gms-server\\gms-handler\\wz-zh-CN\\Quest.wz");
-        Path enQuestPath = Path.of(root + "\\gms-server\\gms-handler\\wz\\Quest.wz");
+        for (ItemTask task : itemTasks) {
+            // wz-cn文件夹
+            Map<Integer, String> cnNames = WzResolver.ITEM_RESOLVER.resolve(cnPath, task.cnImgFile, task.cnSubNode, "cn");
+            //cms48
+            Map<Integer, String> cnNames48 = WzResolver.ITEM_RESOLVER.resolve(cnPath48, task.enImgFile, task.enSubNode, "en");
 
-        // 1. 处理通用模块 (Mob, Npc)
-        for (String subImg : Arrays.asList("Mob.img", "Npc.img")) {
-            Map<Integer, String> needAddMap = cmpStringMap(cnPath, pathcms48, subImg, WzResolver.FLAT_NAME_RESOLVER);
+            Map<Integer, String> enNames = WzResolver.ITEM_RESOLVER.resolve(enPath, task.enImgFile, task.enSubNode, "en");
 
+            Map<Integer, String> needAddMap = cmpExist(cnNames48, enNames);  // 比的是原声差异
+//            Map<Integer, String> needAddMap = cmpExist(cnNames48, cnNames);    // 比的是当前wz-cn还差多少
             needAddMap.forEach((id, str) -> {
-                System.out.println(subImg + " ：" + id + "(" + str + ")");
+                System.out.println(task.enSubNode + " ：" + id + "(" + str + ")");
             });
         }
 
-        // 2. 处理地图模块 (Map.img)
-        Map<Integer, String> mapNeedAdd = cmpStringMap(cnPath, pathcms48, "Map.img", WzResolver.MAP_RESOLVER);
-        System.out.println("Map.img" + "  需新增： " + mapNeedAdd.keySet().size());
-        mapNeedAdd.forEach((id, str) -> {
-            System.out.println("Map.img" + " ：" + id + "(" + str + ")");
+
+        // eqp 特殊处理
+        List<ItemTask> eqpTasks = List.of(
+                new ItemTask("Eqp.img", "Item.img", "Accessory", "Accessory"),
+                new ItemTask("Eqp.img", "Item.img", "Cap", "Cap"),
+                new ItemTask("Eqp.img", "Item.img", "Cape", "Cape"),
+                new ItemTask("Eqp.img", "Item.img", "Coat", "Coat"),
+                new ItemTask("Eqp.img", "Item.img", "Face", "Face"),
+                new ItemTask("Eqp.img", "Item.img", "Glove", "Glove"),
+                new ItemTask("Eqp.img", "Item.img", "Hair", "Hair"),
+                new ItemTask("Eqp.img", "Item.img", "Longcoat", "Longcoat"),
+                new ItemTask("Eqp.img", "Item.img", "Pants", "Pants"),
+                new ItemTask("Eqp.img", "Item.img", "PetEquip", "PetEquip"),
+                new ItemTask("Eqp.img", "Item.img", "Ring", "Ring"),
+                new ItemTask("Eqp.img", "Item.img", "Shield", "Shield"),
+                new ItemTask("Eqp.img", "Item.img", "Shoes", "Shoes"),
+                new ItemTask("Eqp.img", "Item.img", "Taming", "Taming"),
+                new ItemTask("Eqp.img", "Item.img", "Weapon", "Weapon")
+        );
+        for (ItemTask task : eqpTasks) {
+            Map<Integer, String> cnNames = WzResolver.EQP_RESOLVER.resolve(cnPath, task.cnImgFile, task.cnSubNode, "cn");
+
+
+            Map<Integer, String> cnNames48 = null;
+            try {
+                cnNames48 = WzResolver.EQP_RESOLVER.resolve(cnPath48, task.enImgFile, task.enSubNode, "en");
+            } catch (Exception e) {
+                System.out.println("not have" + task.enSubNode);
+                continue;
+            }
+            Map<Integer, String> enNames = WzResolver.EQP_RESOLVER.resolve(enPath, task.enImgFile, task.enSubNode, "en");
+
+
+            Map<Integer, String> needAddMap = cmpExist(cnNames48, enNames);      // 比的是原生差异
+//            Map<Integer, String> needAddMap = cmpExist(cnNames48, cnNames);    // 比的是当前wz-cn还差多少
+            needAddMap.forEach((id, str) -> {
+                System.out.println(task.enSubNode + " ：" + id + "(" + str + ")");
+            });
+        }
+    }
+
+    /**
+     *
+     * @param fromMap 从这里可以提取的
+     * @param nowHaveMap
+     * @return
+     */
+    private static Map<Integer, String> cmpExist(Map<Integer, String> fromMap, Map<Integer, String> nowHaveMap) {
+        Set<Integer> cnIds = nowHaveMap.keySet();
+        Set<Integer> cn48Ids = fromMap.keySet();
+
+        List<Integer> needAddQuestIds = new ArrayList<>();
+        Map<Integer, String> needAddMap = new TreeMap<>();
+
+
+        for (Integer quest48Id : cn48Ids) {
+            if (!cnIds.contains(quest48Id)) {
+                needAddQuestIds.add(quest48Id);
+            }
+        }
+        needAddQuestIds.stream().sorted().forEach( id -> {
+            needAddMap.put(id, fromMap.get(id));
         });
 
-
-
-//        Map<Integer, String> itemALl = new HashMap<>();
-//        int itemLen  = 0;
-//        // 3. 处理物品模块 (适配新旧版本格式差异)
-//        // 新版：Direct Img (Cash.img, Consume.img, Etc.img 等)
-//        // 旧版：Item.img -> SubNode (Cash, Con, Etc 等)
-//        List<ItemTask> itemTasks = List.of(
-//                new ItemTask("Cash.img", "Item.img", "Cash", "Cash"),
-//                new ItemTask("Consume.img", "Item.img", "Con", "Con"),
-//                new ItemTask("Ins.img", "Item.img", "Ins", "Ins"),
-//                new ItemTask("Pet.img", "Item.img", "Pet", "Pet"),
-//                new ItemTask("Etc.img", "Item.img", "Etc", "Etc")
-//        );
-//
-//        for (ItemTask task : itemTasks) {
-//            Map<Integer, String> cnNames = WzResolver.ITEM_RESOLVER.resolve(cnPath, task.cnImgFile, task.cnSubNode, "cn");
-//            Map<Integer, String> enNames = WzResolver.ITEM_RESOLVER.resolve(enPath, task.enImgFile, task.enSubNode, "en");
-//            itemALl.putAll(enNames);
-//            itemLen += enNames.size();
-////            try {
-////                buildJava(cnNames, enNames, outputDir, task.outputName);
-////            } catch (IOException e) {
-////                System.err.println("生成 " + task.outputName + " 失败: " + e.getMessage());
-////            }
-//        }
-//
-//        // eqp 特殊处理
-//        List<ItemTask> eqpTasks = List.of(
-//                new ItemTask("Eqp.img", "Item.img", "Accessory", "Accessory"),
-//                new ItemTask("Eqp.img", "Item.img", "Cap", "Cap"),
-//                new ItemTask("Eqp.img", "Item.img", "Cape", "Cape"),
-//                new ItemTask("Eqp.img", "Item.img", "Coat", "Coat"),
-//                new ItemTask("Eqp.img", "Item.img", "Face", "Face"),
-//                new ItemTask("Eqp.img", "Item.img", "Glove", "Glove"),
-//                new ItemTask("Eqp.img", "Item.img", "Hair", "Hair"),
-//                new ItemTask("Eqp.img", "Item.img", "Longcoat", "Longcoat"),
-//                new ItemTask("Eqp.img", "Item.img", "Pants", "Pants"),
-//                new ItemTask("Eqp.img", "Item.img", "PetEquip", "PetEquip"),
-//                new ItemTask("Eqp.img", "Item.img", "Ring", "Ring"),
-//                new ItemTask("Eqp.img", "Item.img", "Shield", "Shield"),
-//                new ItemTask("Eqp.img", "Item.img", "Shoes", "Shoes"),
-//                new ItemTask("Eqp.img", "Item.img", "Taming", "Taming"),
-//                new ItemTask("Eqp.img", "Item.img", "Weapon", "Weapon")
-//        );
-//        for (ItemTask task : eqpTasks) {
-//            Map<Integer, String> cnNames = WzResolver.EQP_RESOLVER.resolve(cnPath, task.cnImgFile, task.cnSubNode, "cn");
-//            Map<Integer, String> enNames = WzResolver.EQP_RESOLVER.resolve(enPath, task.enImgFile, task.enSubNode, "en");
-//            itemALl.putAll(enNames);
-//            itemLen += enNames.size();
-//
-////            try {
-////                buildJava(cnNames, enNames, outputDir, task.outputName);
-////            } catch (IOException e) {
-////                System.err.println("生成 " + task.outputName + " 失败: " + e.getMessage());
-////            }
-//        }
-//
-
-
-
-        // 处理任务
-//        generate(cnQuestPath, enQuestPath, outputDir, "QuestInfo.img", "QuestInfo.img", WzResolver.QUEST_RESOLVER);
-
+        return needAddMap;
 
     }
+
+
 
     private static Map<Integer, String> cmpStringMap(Path cnPath, Path pathcms48, String subImg, WzResolver resolver) {
         Map<Integer, String> cnNames = resolver.resolve(cnPath, subImg, null, "cn");

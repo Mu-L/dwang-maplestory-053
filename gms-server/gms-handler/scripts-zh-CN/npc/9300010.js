@@ -50,7 +50,7 @@ function action(mode, type, selection) {
         }
 
         // 随机概率逻辑
-        var rand = Math.floor(Math.random() * 800000);
+        var rand = Math.floor(Math.random() * 10000); //修改官方概率否则太低了
         var mesoReward = 0;
 
         if (rand == 0) {

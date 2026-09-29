@@ -1,10 +1,12 @@
 package cmp;
 
 
+import io.micrometer.common.util.StringUtils;
 import org.gms.provider.*;
 import org.gms.provider.wz.XMLWZFile;
 import org.gms.server.MapStrInfo;
 import org.gms.util.PathUtils;
+import org.gms.util.StringUtil;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -45,7 +47,14 @@ public class MapCmp {
             }
         }
         needAddIds.stream().sorted().forEach( id -> {
-            needAddMap.put(id, cnNames.get(id));
+            String s = cnNames.get(id);
+            if (!StringUtils.isEmpty(s)) {
+                needAddMap.put(id, s);
+            }
+        });
+
+        needAddMap.forEach((id, str) -> {
+            System.out.println("Map：" + id + "(" + str + ")");
         });
 
     }
