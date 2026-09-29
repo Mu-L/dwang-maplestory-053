@@ -24,8 +24,8 @@
  */
 
 var isPq = true;
-var minPlayers = 3, maxPlayers = 6;
-var minLevel = 21, maxLevel = 120;
+var minPlayers = 1, maxPlayers = 6;
+var minLevel = 71, maxLevel = 200;
 var entryMap = 197000000;
 var exitMap = 193000000;
 var recruitMap = 193000000;
@@ -40,11 +40,6 @@ var couponsNeeded = 300;    // total of coupons to complete the event
 
 const maxLobbies = 1;
 
-const GameConfig = Java.type('org.gms.config.GameConfig');
-minPlayers = GameConfig.getServerBoolean("use_enable_solo_expeditions") ? 1 : minPlayers;  //如果解除远征队人数限制，则最低人数改为1人
-if(GameConfig.getServerBoolean("use_enable_party_level_limit_lift")) {  //如果解除远征队等级限制，则最低1级，最高999级。
-    minLevel = 1 , maxLevel = 999;
-}
 
 function init() {
     setEventRequirements();
@@ -271,7 +266,7 @@ function monsterKilled(mob, eim) {
         }
 
         // 判定 1% 掉落概率 (Math.random() 返回 0.0 到 1.0 之间的浮点数)
-        if (Math.random() < 1) {
+        if (Math.random() < 0.5) {
             var mapObj = mob.getMap();
             const Item = Java.type('org.gms.client.inventory.Item');
             var itemObj = new Item(4000047, 0, getDroppedQuantity(mob));
