@@ -192,9 +192,11 @@ public class ActivityMonsterManager {
             return;
         }
 
+        Character character = qualified.getFirst();
+
         // ② 换一张新图（优先挑刷怪点够放下本轮怪物的图）
         int needed = event.totalSpawnCount();
-        MapleMap map = pickMap(event, needed);
+        MapleMap map = pickMap(character, event, needed);
         if (map == null) {
             log.warn("[活动怪物] 活动 {} 找不到可用的地图（候选池为空或都没有刷怪点），本回合跳过", event.key());
             return;
@@ -250,8 +252,8 @@ public class ActivityMonsterManager {
      * 已确认没有刷怪点的图会被记住，不会反复加载。
      * 同等条件下优先挑刷怪点数 {@code >= neededPoints} 的图，避免怪叠在一起。
      */
-    private MapleMap pickMap(ActivityMonsterEvent event, int neededPoints) {
-        Collection<Integer> candidates = event.candidateMapIds();
+    private MapleMap pickMap(Character character, ActivityMonsterEvent event, int neededPoints) {
+        Collection<Integer> candidates = event.candidateMapIds(character);
         if (candidates == null || candidates.isEmpty()) {
             return null;
         }

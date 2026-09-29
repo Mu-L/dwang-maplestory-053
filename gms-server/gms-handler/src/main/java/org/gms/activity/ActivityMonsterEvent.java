@@ -13,7 +13,7 @@ import java.util.List;
  * <p>子类只需要实现两个方法：
  * <ul>
  *   <li>{@link #shouldSummon(Character)} —— 什么时候该召唤（"是否召唤"的判断，不进数据库）</li>
- *   <li>{@link #candidateMapIds()} —— 从哪些地图里随机挑一张</li>
+ *   <li>{@link #candidateMapIds(Character)} —— 从哪些地图里随机挑一张</li>
  * </ul>
  *
  * <p>其余的（计时、找合格玩家、清场、换图、取刷怪点、召唤多种怪、发通知）全部由
@@ -90,7 +90,7 @@ public abstract class ActivityMonsterEvent {
      *
      * @return 候选地图 ID；返回空集合则本回合跳过
      */
-    public abstract Collection<Integer> candidateMapIds();
+    public abstract Collection<Integer> candidateMapIds(Character character);
 
     // ==================== 子类可选覆盖 ====================
 

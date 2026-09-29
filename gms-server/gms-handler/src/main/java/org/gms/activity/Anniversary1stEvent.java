@@ -33,7 +33,7 @@ public class Anniversary1stEvent extends ActivityMonsterEvent {
 
     /** 地图池：本服的隐藏地图 */
     @Override
-    public Collection<Integer> candidateMapIds() {
+    public Collection<Integer> candidateMapIds(Character character) {
         return HiddenMapAchievementManager.getHiddenMapIds();
     }
 }

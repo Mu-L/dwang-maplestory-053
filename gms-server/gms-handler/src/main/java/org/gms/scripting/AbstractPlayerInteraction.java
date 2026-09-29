@@ -388,6 +388,9 @@ public class AbstractPlayerInteraction {
         NPCScriptManager.getInstance().start(c, npcid, script, null);
     }
 
+
+
+
     public int getQuestStatus(int id) {
         return c.getPlayer().getQuest(QuestRepository.getInstance(id)).getStatus().getId();
     }
