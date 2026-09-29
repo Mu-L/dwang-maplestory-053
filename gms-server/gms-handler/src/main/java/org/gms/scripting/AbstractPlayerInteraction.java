@@ -404,8 +404,13 @@ public class AbstractPlayerInteraction {
         return c.getPlayer().getQuest(QuestRepository.getInstance(id)).getCustomData();
     }
 
-    public void getQuestCustomData(int id, String value) {
+    public void updateQuestCustomData(int id, String value) {
         QuestStatus quest = c.getPlayer().getQuest(QuestRepository.getInstance(id));
+        if ("ing".equals(value)) {
+            quest.setStatus(QuestStatus.Status.STARTED);
+        } else if ("end".equals(value)) {
+            quest.setStatus(QuestStatus.Status.COMPLETED);
+        }
         quest.setCustomData(value);
     }
 

@@ -78,7 +78,7 @@ function setEventRequirements() {
 }
 
 function setEventExclusives(eim) {
-    var itemSet = [4001007];
+    var itemSet = [];
     eim.setExclusiveItems(itemSet);
 }
 
@@ -270,12 +270,15 @@ function monsterKilled(mob, eim) {
             return;
         }
 
-        var mapObj = mob.getMap();
-        const Item = Java.type('org.gms.client.inventory.Item');
-        var itemObj = new Item(4001007, 0, getDroppedQuantity(mob));
-        var dropper = eim.getPlayers().get(0);
+        // 判定 1% 掉落概率 (Math.random() 返回 0.0 到 1.0 之间的浮点数)
+        if (Math.random() < 0.4) {
+            var mapObj = mob.getMap();
+            const Item = Java.type('org.gms.client.inventory.Item');
+            var itemObj = new Item(4000047, 0, getDroppedQuantity(mob));
+            var dropper = eim.getPlayers().get(0);
 
-        mapObj.spawnItemDrop(mob, dropper, itemObj, mob.getPosition(), true, false);
+            mapObj.spawnItemDrop(mob, dropper, itemObj, mob.getPosition(), true, false);
+        }
 
     } catch (err) {
     } // PQ not started yet

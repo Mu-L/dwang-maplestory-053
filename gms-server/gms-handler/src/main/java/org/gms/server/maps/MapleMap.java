@@ -2629,6 +2629,11 @@ public class MapleMap {
         chr.setMapId(mapid);
         chr.updateActiveEffects();
 
+        // v0.53 的客户端把“自动使用HP/MP药水”记在 CFuncKeyMappedMan 的内存字段里
+        // （CField::OnPacket 用 0xF7/AUTO_POTION 收包），过图或重登后不会自己恢复。
+        // 每次进入地图时补发一次，否则玩家设置的自动喝药会丢失。
+        chr.sendAutoPotion();
+
         if (this.getHPDec() > 0) {
             getWorldServer().addPlayerHpDecrease(chr);
         } else {

@@ -1,267 +1,208 @@
 /*
-    This file is part of the HeavenMS MapleStory Server
-    Copyleft (L) 2016 - 2019 RonanLana
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as
-    published by the Free Software Foundation version 3 as published by
-    the Free Software Foundation. You may not use, modify or distribute
-    this program under any other version of the GNU Affero General Public
-    License.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-/**
- * @author: Ronan
- * @npc: Vending Machine
- * @map: 193000000 - Premium Road - Kerning City Internet Cafe
- * @func: Cafe PQ Rewarder
+ * NPC 脚本: mouse.js (网吧管理员 / 鼠标回收积分系统)
+ * 对应任务 ID: 1001300 (保存积分), 1001301 (保存上次签到时间戳)
+ * 架构: OdinMS / BeiDou
  */
 
-var status;
+var status = -1;
+var questPointsId = 1001300;
+var questTimeId = 1001301;
+var mouseItemId = 4000047;
 
-var itemSet_lv6 = [1442046, 1432018, 1102146, 1102145, 2022094, 2022544, 2022123, 2022310, 2040727, 2041058, 2040817, 4000030, 4003005, 4003000, 4011007, 4021009, 4011008, 3010098];
-var itemQty_lv6 = [1, 1, 1, 1, 35, 15, 20, 20, 1, 1, 1, 30, 30, 30, 1, 1, 3, 1];
-
-var itemSet_lv5 = [1382015, 1382016, 1442044, 1382035, 2022310, 2022068, 2022069, 2022190, 2022047, 2040727, 2040924, 2040501, 4000030, 4003005, 4003000, 4011003, 4011006, 4021004, 3010099];
-var itemQty_lv5 = [1, 1, 1, 1, 20, 40, 40, 30, 30, 1, 1, 1, 20, 20, 25, 3, 2, 3, 1];
-
-var itemSet_lv4 = [1332029, 1472027, 1462032, 1492019, 2022045, 2022048, 2022094, 2022123, 2022058, 2041304, 2041019, 2040826, 2040758, 4000030, 4003005, 4003000, 4010007, 4011003, 4021003, 3010016, 3010017];
-var itemQty_lv4 = [1, 1, 1, 1, 45, 40, 25, 20, 60, 1, 1, 1, 1, 10, 10, 20, 5, 1, 1, 1, 1];
-
-var itemSet_lv3 = [1302058, 1372008, 1422030, 1422031, 1022082, 2022279, 2022120, 2001001, 2001002, 2022071, 2022189, 2040914, 2041001, 2041041, 2041308, 4031203, 4000030, 4003005, 4003000, 4010004, 4010006, 4020000, 4020006, 3010002, 3010003];
-var itemQty_lv3 = [1, 1, 1, 1, 1, 65, 40, 40, 40, 25, 25, 1, 1, 1, 1, 10, 7, 10, 8, 5, 5, 5, 5, 1, 1];
-
-var itemSet_lv2 = [1022073, 1012098, 1012101, 1012102, 1012103, 2022055, 2022056, 2022103, 2020029, 2020032, 2020031, 2022191, 2022016, 2043300, 2043110, 2043800, 2041001, 2040903, 4031203, 4000021, 4003005, 4003000, 4003001, 4010000, 4010001, 4010003, 4010004, 4020004, 3010004, 3010005];
-var itemQty_lv2 = [1, 1, 1, 1, 1, 40, 40, 40, 40, 60, 60, 60, 60, 1, 1, 1, 1, 1, 4, 6, 7, 5, 2, 4, 4, 3, 3, 4, 1, 1];
-
-var itemSet_lv1 = [1302021, 1302024, 1302033, 1082150, 1002419, 2022053, 2022054, 2020032, 2022057, 2022096, 2022097, 2022192, 2020030, 2010005, 2022041, 2030000, 2040100, 2040004, 2040207, 2048004, 4031203, 4000021, 4003005, 4003000, 4003001, 4010000, 4010001, 4010002, 4010005, 4020004];
-var itemQty_lv1 = [1, 1, 1, 1, 1, 20, 20, 20, 20, 20, 25, 25, 25, 50, 50, 12, 1, 1, 1, 1, 3, 4, 2, 2, 1, 2, 2, 2, 2, 2];
-
-var levels = ["第1层", "第2层", "第3层", "第4层", "第5层", "第6层"];
-
-var tickets = [0, 0, 0, 0, 0, 0];
-var coinId = 4001158;
-var coins = 0;
-
-var hasCoin = false;
-var currentTier;
-var curItemQty;
-var curItemSel;
-var advance = true;
+var mainMenuChoice = -1;
+var exchangeOption = -1;
+var inputQuantity = 0;
 
 function start() {
-    status = -1;
     action(1, 0, 0);
 }
 
 function action(mode, type, selection) {
-    if (mode == -1) {
+    if (mode <= 0) {
+        if (status == 0 && mainMenuChoice == 2) {
+            cm.sendNext("似乎真的是我们在找的 #t" + mouseItemId + "#... 如果你想换积分的话，请随时把鼠标交给我~");
+        }
         cm.dispose();
-    } else {
-        if (mode == 0 && type > 0) {
-            cm.dispose();
-            return;
-        }
-        if (mode == 1 && advance) {
-            status++;
-        } else {
-            status--;
-        }
+        return;
+    }
+    status++;
 
-        advance = true;
+    var pData = cm.getQuestRecord(questPointsId).getCustomData();
 
+    // --- 1. 未加入会员 (首次对话逻辑) ---
+    if (pData == null || pData === "") {
         if (status == 0) {
-            hasCoin = cm.haveItem(coinId);
-            cm.sendNext("这是互联网咖啡厅的自动贩卖机。放置你在任务中获得的橡皮擦或#t" + coinId + "#来兑换奖品。你可以放置#b任意数量的橡皮擦#k，但请注意放置#r不同的橡皮擦#k和#r更多数量的任何一种#k会提高奖励的可能性！");
+            cm.sendNext("欢迎欢迎~ 我们网吧以超一流的设施而闻名。诶？什么？你的电脑上居然没有 #b#t" + mouseItemId + "##k？嗯……这真是个大问题……其实不久前有些奇怪的家伙闯进来，把我们所有的#b#t" + mouseItemId + "##k都抢走了……我该怎么办才好……");
         } else if (status == 1) {
-            var sendStr;
-            currentTier = getRewardTier();
-
-            if (currentTier >= 0) {
-                sendStr = "使用您当前放置的物品，您可以检索#r" + levels[currentTier] + "#k 奖品。放置橡皮擦:";
-            } else {
-                sendStr = "您还没有放置橡皮擦。放置橡皮擦:";
-            }
-
-            var listStr = "";
-            for (var i = 0; i < tickets.length; i++) {
-                listStr += "#b#L" + i + "##t" + (4001009 + i) + "##k";
-                if (tickets[i] > 0) {
-                    listStr += " - " + tickets[i] + " 橡皮擦";
-                }
-                listStr += "#l\r\n";
-            }
-            if (hasCoin) {
-                listStr += "#b#L" + tickets.length + "##t" + coinId + "##k";
-                if (coins > 0) {
-                    listStr += " - " + coins + " 羽毛";
-                }
-                listStr += "#l\r\n";
-            }
-
-            cm.sendSimple(sendStr + "\r\n\r\n" + listStr + "#r#L" + getRewardIndex(hasCoin) + "#找回奖品！#l#k\r\n");
-
+            cm.sendYesNo("太好了！你能帮我找回来吗？如果你愿意的话，我会把你注册为我们网吧的VIP会员，并为你保存积分。只要你积攒了足够的积分，就可以用来兑换我们这里的各种道具物资。你觉得怎么样？要接受吗？");
         } else if (status == 2) {
-            if (selection == getRewardIndex(hasCoin)) {
-                if (currentTier < 0) {
-                    cm.sendPrev("您没有提交橡皮擦。提交至少一个橡皮擦即可领取奖品。");
-                    advance = false;
-                } else {
-                    givePrize();
-                    cm.dispose();
-                }
-            } else {
-                var tickSel;
-                if (selection < tickets.length) {
-                    tickSel = 4001009 + selection;
-                } else {
-                    tickSel = coinId;
-                }
-
-                curItemQty = cm.getItemQuantity(tickSel);
-                curItemSel = selection;
-
-                if (curItemQty > 0) {
-                    cm.sendGetText("要将提交多少个 #b#t" + tickSel + "##k 提交到机器上? (剩余#r" + curItemQty + "#k 可用)#k");
-                } else {
-                    cm.sendPrev(" #r你没有可用的 #k #b#t" + tickSel + "##k 提交到机器上。 点击 '#r上项#k' 返回主界面。");
-                    advance = false;
-                }
-            }
+            cm.sendNext("太棒了！现在你正式成为我们网吧的会员了！看到2楼右边的那台电脑了吗？你可以通过那台电脑进入副本。在那里#b击败怪物#k时，你可以顺便收集到掉落的 #t" + mouseItemId + "#。");
         } else if (status == 3) {
-            var text = cm.getText();
+            cm.sendNext("外面丢失了非常多的 #t" + mouseItemId + "#，你可能需要费一番功夫来收集。你每回收#b1#k个鼠标，我就会奖励你#b10#k点积分。如果你想累计积分、查询积分总数或兑换物资，随时来找我，我整天都会在这里。");
+        } else if (status == 4) {
+            // 在首次对话全部结束时，再写入初始 0 积分与当前签到时间，防止中途改变 pData 破坏状态流
+            var currentTime = java.lang.System.currentTimeMillis();
+            cm.getQuestRecord(questPointsId).setCustomData("50");
+            cm.getQuestRecord(questTimeId).setCustomData("" + currentTime);
 
-            try {
-                var placedQty = parseInt(text);
-                if (isNaN(placedQty) || placedQty < 0) {
-                    throw true;
-                }
+            cm.sendNext("啊对了！如果收集鼠标对你来说太难了，只要每天坚持来我们网吧打卡就行。为此，我们每天会额外赠送你 50 点积分。别忘了，每天来跟我说一次话，我就帮你增加积分。那么，很高兴认识你~初次见面，将会送您50积分，请查收。");
+            cm.dispose();
+        }
+        return;
+    }
 
-                if (placedQty > curItemQty) {
-                    cm.sendPrev("你没有足够的橡皮可提交 (剩余#r" + curItemQty + "#k 可用). 点击 '#r上项#k' 返回主界面。");
-                    advance = false;
-                } else {
-                    if (curItemSel < tickets.length) {
-                        tickets[curItemSel] = placedQty;
-                    } else {
-                        coins = placedQty;
-                    }
+    // --- 2. 解析玩家已有的积分数值 ---
+    var points = parseInt(pData);
+    if (isNaN(points)) {
+        points = 0;
+    }
 
-                    cm.sendPrev("操作成功。 点击 '#r上项#k' 返回主界面 #r找回奖品！#k");
-                    advance = false;
-                }
-            } catch (err) {
-                cm.sendPrev("你必须提交正确橡皮擦数量。 点击 '#r上项#k' 返回主界面。");
-                advance = false;
+    // --- 3. 检查并发放每日签到奖励 (24小时冷却) ---
+    var lastTimeStr = cm.getQuestRecord(questTimeId).getCustomData();
+    var currentTime = java.lang.System.currentTimeMillis();
+    var isDailyReward = false;
+
+    if (lastTimeStr == null || lastTimeStr === "") {
+        isDailyReward = true;
+    } else {
+        var lastTime = java.lang.Long.parseLong(lastTimeStr);
+        // 24小时 = 86,400,000 毫秒
+        if (currentTime - lastTime >= 86400000) {
+            isDailyReward = true;
+        }
+    }
+
+    if (isDailyReward) {
+        points += 50;
+        cm.getQuestRecord(questPointsId).setCustomData("" + points);
+        cm.getQuestRecord(questTimeId).setCustomData("" + currentTime);
+        // 弹出打卡提示，点击后自动进入主菜单对话
+        cm.sendNext("非常感谢你光临我们的网吧！为此，我们将额外奖励 #b50 点积分#k 到你的网吧累计积分中。\r\n玩家 #b" + cm.getPlayer().getName() + "#k 当前拥有 #r" + points + " 点积分#k。");
+        return;
+    }
+
+    // --- 4. 会员主菜单对话 ---
+    if (status == 0) {
+        cm.sendSimple("这是会员专属服务，请选择菜单~\r\n" +
+            "#b#L0#关于积分的说明#l\r\n" +
+            "#b#L1#查询我的总积分#l\r\n" +
+            "#b#L2#回收鼠标（换取积分）#l\r\n" +
+            "#b#L3#兑换商品物资#l");
+    } else if (status == 1) {
+        mainMenuChoice = selection;
+
+        // 【菜单 0】：积分说明
+        if (mainMenuChoice == 0) {
+            cm.sendNext("我来给你说明一下网吧积分。你每找回 1 个丢失的 #b#t" + mouseItemId + "##k，我们就会奖励你#b10#k点积分。积累足够积分后，可以兑换我们提供的各种物资，其中不乏稀有物品哦！建议你赶快多搜集一些！#t" + mouseItemId + "# 可以通过2楼右侧电脑进入的副本中怪物掉落获得。另外，每天来网吧打卡，我们也会额外赠送#b50点积分#k！");
+            cm.dispose();
+        }
+        // 【菜单 1】：查询积分
+        else if (mainMenuChoice == 1) {
+            cm.sendNext("我帮你查询了一下，玩家 #b" + cm.getPlayer().getName() + "#k 目前拥有 #r" + points + " 点积分#k。稍后可以用来兑换店里的各种物资，请继续加油收集吧~");
+            cm.dispose();
+        }
+        // 【菜单 2】：回收鼠标换积分
+        else if (mainMenuChoice == 2) {
+            var mCount = cm.getItemQuantity(mouseItemId);
+            if (mCount < 1) {
+                cm.sendNext("你身上好像没有我们网吧丢失的 #t" + mouseItemId + "# 呢。如果搜集到了，记得带过来换积分哦！");
+                cm.dispose();
+            } else {
+                cm.sendGetNumber("你当前拥有 #b" + mCount + "#k 个 #t" + mouseItemId + "#。\r\n每回收 1 个可获得 #b10#k 积分。请输入你要兑换的数量：", mCount, 1, mCount);
             }
-
-            status = 2;
-        } else {
+        }
+        // 【菜单 3】：商品兑换菜单
+        else if (mainMenuChoice == 3) {
+            var shopMenu = "你当前拥有：#r" + points + "#k 积分\r\n" +
+                "#b#L0#随机 10 个基本药水 (消耗 150 积分)#l\r\n" +
+                "#b#L1#随机 10 个食物 (消耗 300 积分)#l\r\n" +
+                "#b#L2#随机 10 个能力提升道具 (消耗 500 积分)#l\r\n" +
+                "#b#L3#随机 10 张回城卷轴 (消耗 500 积分)#l\r\n" +
+                "#b#L4#随机 1 个成品矿石 (消耗 1500 积分)#l\r\n" +
+                "#b#L5#随机 1 个成品宝石 (消耗 2000 积分)#l\r\n" +
+                "#b#L6#10 个螺丝钉 (消耗 2500 积分)#l\r\n" +
+                "#b#L7#随机 10 个夏日特别食物 (消耗 2800 积分)#l";
+            cm.sendSimple(shopMenu);
+        }
+    }
+    // --- 5. 菜单二级逻辑处理 ---
+    else if (status == 2) {
+        // 处理【菜单 2】：提交鼠标逻辑
+        if (mainMenuChoice == 2) {
+            inputQuantity = selection;
+            var mCount = cm.getItemQuantity(mouseItemId);
+            if (inputQuantity > mCount || inputQuantity <= 0) {
+                cm.sendNext("输入的数量不正确，请重新核对。");
+                cm.dispose();
+                return;
+            }
+            var addPoints = inputQuantity * 10;
+            var finalPoints = points + addPoints;
+            cm.sendYesNo("确定要将 #b" + inputQuantity + " 个 #t" + mouseItemId + "##k 兑换为积分吗？兑换后将增加 #r" + addPoints + " 点积分#k，总积分达到 #r" + finalPoints + " 点#k。");
+        }
+        // 处理【菜单 3】：所选商品判断
+        else if (mainMenuChoice == 3) {
+            exchangeOption = selection;
+            handleShopExchange(points, exchangeOption);
+        }
+    }
+    // --- 6. 提交鼠标二次确认执行 ---
+    else if (status == 3) {
+        if (mainMenuChoice == 2) {
+            if (cm.haveItem(mouseItemId, inputQuantity)) {
+                cm.gainItem(mouseItemId, -inputQuantity);
+                var addPoints = inputQuantity * 10;
+                var finalPoints = points + addPoints;
+                cm.getQuestRecord(questPointsId).setCustomData("" + finalPoints);
+                cm.sendNext("成功回收！本次获得了 " + addPoints + " 点积分，你现在的总积分为 #r" + finalPoints + "#k 点。请继续帮我们收集 #t" + mouseItemId + "# 吧~");
+            } else {
+                cm.sendNext("兑换失败，请确认你的背包里是否有足够数量的 #t" + mouseItemId + "#。");
+            }
             cm.dispose();
         }
     }
 }
 
-function getRewardIndex(hasCoin) {
-    return (!hasCoin) ? tickets.length : tickets.length + 1;
-}
+// 兑换商品的具体分支逻辑
+function handleShopExchange(currentPoints, option) {
+    var itemLists = [
+        [2000000, 2000001, 2000002, 2000003], // 0: 药水
+        [2020000, 2020001, 2020002, 2020003, 2020004, 2020005, 2020006, 2020007], // 1: 食物
+        [2012000, 2012001, 2012002, 2012003], // 2: 属性BUFF
+        [2030000, 2030001, 2030002, 2030003, 2030004, 2030005, 2030006], // 3: 回城卷
+        [4011000, 4011001, 4011002, 4011003, 4011004, 4011005, 4011006], // 4: 矿石
+        [4021000, 4021001, 4021002, 4021003, 4021004, 4021005, 4021006, 4021007], // 5: 宝石
+        [4003000], // 6: 螺丝钉
+        [2001000, 2001001, 2001002] // 7: 夏日食品
+    ];
 
-function getRewardTier() {
-    var points = getPoints();
+    var pointCosts = [150, 300, 500, 500, 1500, 2000, 2500, 2800];
+    var itemQuantities = [10, 10, 10, 10, 1, 1, 10, 10];
 
-    if (points <= 6) {
-        if (points <= 0) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
-    if (points >= 46) {
-        return 5;
-    }
+    var cost = pointCosts[option];
+    var qty = itemQuantities[option];
 
-    return Math.floor((points - 6) / 8);
-}
-
-function getPoints() {
-    var points = 0;
-
-    for (var i = 0; i < tickets.length; i++) {
-        if (tickets[i] <= 0) {
-            continue;
-        }
-
-        points += (6 + ((tickets[i] - 1) * getTicketMultiplier(i)));    //6 from uniques + rest from each ticket difficulty
-    }
-    points += Math.ceil(0.46 * coins);  // 100 coins for a LV6 tier item.
-
-    return points;
-}
-
-function getTicketMultiplier(ticket) {
-    if (ticket == 1 || ticket == 3) {
-        return 3;
-    } else {
-        return 1;
-    }
-}
-
-function givePrize() {
-    var lvTarget, lvQty;
-
-    if (currentTier == 0) {
-        lvTarget = itemSet_lv1;
-        lvQty = itemQty_lv1;
-    } else if (currentTier == 1) {
-        lvTarget = itemSet_lv2;
-        lvQty = itemQty_lv2;
-    } else if (currentTier == 2) {
-        lvTarget = itemSet_lv3;
-        lvQty = itemQty_lv3;
-    } else if (currentTier == 3) {
-        lvTarget = itemSet_lv4;
-        lvQty = itemQty_lv4;
-    } else if (currentTier == 4) {
-        lvTarget = itemSet_lv5;
-        lvQty = itemQty_lv5;
-    } else {
-        lvTarget = itemSet_lv6;
-        lvQty = itemQty_lv6;
+    if (currentPoints < cost) {
+        cm.sendNext("你的积分不足。兑换该商品至少需要 #r" + cost + "#k 点积分。");
+        cm.dispose();
+        return;
     }
 
-    if (!hasRewardSlot(lvTarget, lvQty)) {
-        cm.sendOk("检查一下你的背包是否有空间，然后再领取奖品。");
-    } else {
-        var rnd = Math.floor(Math.random() * lvTarget.length);
+    // 随机抽选物品
+    var pool = itemLists[option];
+    var rewardItemId = pool[Math.floor(Math.random() * pool.length)];
 
-        for (var i = 0; i < tickets.length; i++) {
-            if(tickets[i]&&tickets[i]>0){
-                cm.gainItem(4001009 + i, -1 * tickets[i]);
-            }
-        }
-        if(hasCoin){
-            cm.gainItem(coinId, -1 * coins);
-        }
-
-
-        cm.gainItem(lvTarget[rnd], lvQty[rnd]);
-    }
-}
-
-function hasRewardSlot(lvTarget, lvQty) {
-    for (var i = 0; i < lvTarget.length; i++) {
-        if (!cm.canHold(lvTarget[i], lvQty[i])) {
-            return false;
-        }
+    if (!cm.canHold(rewardItemId, qty)) {
+        cm.sendNext("你的背包空间不足，请清理对应分类的背包栏位后再试。");
+        cm.dispose();
+        return;
     }
 
-    return true;
+    // 执行扣分与发货
+    var remainPoints = currentPoints - cost;
+    cm.getQuestRecord(questPointsId).setCustomData("" + remainPoints);
+    cm.gainItem(rewardItemId, qty);
+
+    cm.sendNext("成功使用 #r" + cost + " 点积分#k 兑换了 #b" + qty + " 个 #t" + rewardItemId + "##k！\r\n你目前还剩余 #r" + remainPoints + " 点积分#k。欢迎下次光临~");
+    cm.dispose();
 }

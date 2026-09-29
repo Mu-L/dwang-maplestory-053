@@ -103,7 +103,7 @@ function action(mode, type, selection) {
                     return;
                 }
 
-                cm.sendSimple("#e#b<组队任务：高级之路 - " + levels[selection] + ">\r\n#k#n" + em.getProperty("party") + "\r\n\r\n#p1052014# 的操作方式与普通的不同。它们不使用金币或扭蛋券，而是使用 #r橡皮擦#k，可以通过完成高级之路上的任务获得。要前往那里，你必须找到队友并参加一个组队任务。当组队并准备好后，让你的 #b队长#k 与我交谈。#b\r\n#L0#我想参加组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多详情。");
+                cm.sendSimple("#e#b<组队任务：高级之路 - " + levels[selection] + ">\r\n#k#n" + em.getProperty("party") + "\r\n\r\n#b#p1052014##k的操作方式与普通的不同。它们不使用金币或扭蛋券，而是使用 #r#t4000047##k，可以通过完成怪物获得。要前往那里，你必须找到队友并参加一个组队任务。当组队并准备好后，让你的 #b队长#k 与我交谈。#b\r\n#L0#我想参加组队任务。\r\n#L1#我想" + (cm.getPlayer().isRecvPartySearchInviteEnabled() ? "禁用" : "启用") + "组队搜索。\r\n#L2#我想了解更多详情。");
             } else if (status == 2) {
                 if (selection == 0) {
                     if (cm.getParty() == null) {

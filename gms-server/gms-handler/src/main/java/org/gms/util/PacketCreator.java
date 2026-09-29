@@ -4048,6 +4048,28 @@ public class PacketCreator {
         return p;
     }
 
+    /**
+     * v0.53 专用：把自动使用药水的设置下发给客户端。
+     * <p>
+     * 反汇编依据（GMSv53.exe）：
+     * <ul>
+     *   <li>{@code CFuncKeyMappedMan::OnAutoPotion} @ 0x4F6244 —— 由 {@code CField::OnPacket}(0x4D1861)
+     *       以 opcode 0xF7 分发，函数体顺序为 {@code this[224]=Decode4(); this[225]=Decode4();}
+     *       即先 HP 药品ID、后 MP 药品ID（对象内偏移 0x380/0x384）。</li>
+     *   <li>任一项为 0 时客户端会退回本地 CConfig 默认值，因此 0 表示“该格留空”。</li>
+     * </ul>
+     * 该包必须随每次进入地图（CField）重发，否则客户端 UI 上的自动喝药格子会显示为空。
+     *
+     * @param hpItemId 自动使用 HP 药水的道具ID，0 表示留空
+     * @param mpItemId 自动使用 MP 药水的道具ID，0 表示留空
+     */
+    public static Packet getAutoPotion(int hpItemId, int mpItemId) {
+        final OutPacket p = OutPacket.create(SendPacketOpcode.AUTO_POTION);
+        p.writeInt(hpItemId);
+        p.writeInt(mpItemId);
+        return p;
+    }
+
     public static Packet QuickslotMappedInit(QuickslotBinding pQuickslot) {
         OutPacket p = OutPacket.create(SendPacketOpcode.QUICKSLOT_INIT);
         pQuickslot.encode(p);

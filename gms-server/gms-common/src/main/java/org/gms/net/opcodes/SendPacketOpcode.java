@@ -228,6 +228,19 @@ public enum SendPacketOpcode implements Opcode {
     // check ↓
     KEYMAP(0xF6), // 刷新键盘快捷键配置  ok
 
+    /**
+     * v0.53 专用：设置自动使用药水（HP + MP 一次性下发）。
+     * 客户端 CFuncKeyMappedMan::OnAutoPotion(0x4F6244, 由 CField::OnPacket 分发) 依次 Decode4 两个 int：
+     * 先 HP 药品ID，再 MP 药品ID。任一项传 0 时客户端会回退到本地配置里的默认药品。
+     * 注意：v0.83 客户端用的是 AUTO_HP_POT(0x150) / AUTO_MP_POT(0x151)，两者不可混用。
+     */
+    AUTO_POTION(0xF7), // 自动使用HP/MP药水（v0.53 一对下发）  ok
+    /**
+     * v0.53 专用：只设置自动使用药水的 HP 药品ID（单个 int）。
+     * 客户端 CFuncKeyMappedMan::OnAutoHpPotion(0x4F6293)。
+     */
+    AUTO_HP_POT_053(0xF8), // 自动使用HP药水（v0.53 单独下发）
+
 
     // check ↓
     REACTOR_HIT(0xB3), // 反应堆被击中

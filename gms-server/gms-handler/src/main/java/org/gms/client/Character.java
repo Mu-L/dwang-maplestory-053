@@ -8169,8 +8169,34 @@ public class Character extends AbstractCharacterObject {
         //}, 6000);
     }
 
+    /**
+     * 自动使用药水在 keymap 里的“伪键位”。
+     * <p>
+     * v0.53 客户端把自动喝药的两格存在 {@code CFuncKeyMappedMan} 的独立字段里
+     * （对象偏移 0x380 = HP、0x384 = MP），既不属于 0..88 的普通快捷键数组，
+     * 也不随 0xF6(KEYMAP) 下发。因此服务端用两个约定键位 91/92 保存，
+     * 并在每次进入地图时通过 0xF7(AUTO_POTION) 单独下发。
+     */
+    public static final int AUTO_HP_POT_KEY = 91;
+    public static final int AUTO_MP_POT_KEY = 92;
+
     public void sendKeymap() {
         sendPacket(PacketCreator.getKeymap(keymap));
+        sendAutoPotion();
+    }
+
+    /**
+     * 下发自动使用HP/MP药水（v0.53 的 0xF7 包）。
+     * <p>
+     * 必须在每次进入地图时重发：客户端把这两格放在内存里，进图/重登后不会自己恢复，
+     * 不补发就会表现为“设置的自动使用HP/MP药水消失”。
+     */
+    public void sendAutoPotion() {
+        KeyBinding autoHpPot = keymap.get(AUTO_HP_POT_KEY);
+        KeyBinding autoMpPot = keymap.get(AUTO_MP_POT_KEY);
+        sendPacket(PacketCreator.getAutoPotion(
+                autoHpPot == null ? 0 : autoHpPot.getAction(),
+                autoMpPot == null ? 0 : autoMpPot.getAction()));
     }
 
     public void sendQuickmap() {
@@ -8404,7 +8430,7 @@ public class Character extends AbstractCharacterObject {
             }
 
             if (hpchange < 0) {
-                KeyBinding autoHpPot = this.getKeymap().get(91);
+                KeyBinding autoHpPot = this.getKeymap().get(AUTO_HP_POT_KEY);
                 if (autoHpPot != null) {
                     int autoHpItemId = autoHpPot.getAction();
                     if (((float) this.getHp()) / this.getCurrentMaxHp() <= autoHpAlert) {
@@ -8417,7 +8443,7 @@ public class Character extends AbstractCharacterObject {
             }
 
             if (mpchange < 0) {
-                KeyBinding autoMpPot = this.getKeymap().get(92);
+                KeyBinding autoMpPot = this.getKeymap().get(AUTO_MP_POT_KEY);
                 if (autoMpPot != null) {
                     int autoMpItemId = autoMpPot.getAction();
                     if (((float) this.getMp()) / this.getCurrentMaxMp() <= autoMpAlert) {
