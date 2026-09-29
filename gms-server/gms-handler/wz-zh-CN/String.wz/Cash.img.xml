@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="Cash.img">
     <imgdir name="5010000">
         <string name="name" value="太阳效果"/>
@@ -2247,5 +2247,53 @@
     <imgdir name="5620008">
         <string name="desc" value="Has a 100% chance of raising the Master Level of the #cCritical Magic# skill to 15.\nJob: Evan\nCondition: Skill must be at least level 5\n#cOnly usable once per character"/>
         <string name="name" value="Critical Magic Mastery Book"/>
+    </imgdir>
+    <imgdir name="5042000">
+      <string name="name" value="豫园高级瞬移之石"/>
+      <string name="desc" value="可去#c东方神州豫园的石头#。"/>
+    </imgdir>
+    <imgdir name="5042001">
+      <string name="name" value="高级瞬移之石"/>
+      <string name="desc" value="可在#c岛屿间进行传送的石头#。在相同频道内，可移动到特定角色所在的地图。最多可记录#c10个#地图。无法前往限制移动的地图。"/>
+    </imgdir>
+    <imgdir name="5090100">
+      <string name="name" value="请柬"/>
+      <string name="desc" value="可以向自己的新朋好友发送请柬。当对方登陆的时候可以阅读请柬内容。"/>
+    </imgdir>
+    <imgdir name="5140005">
+      <string name="name" value="中华个人商店"/>
+      <string name="desc" value="双击物品可以开启中国传统屋样的个人商店. 在自由市场可以开店。"/>
+    </imgdir>
+    <imgdir name="5150014">
+      <string name="name" value="豫园美发店一般会员卡"/>
+      <string name="desc" value="在豫园美发店可以用一般的会员卡。发型随机。"/>
+    </imgdir>
+    <imgdir name="5150015">
+      <string name="name" value="豫园美发店高级会员卡"/>
+      <string name="desc" value="在豫园美发店可以用高级的会员卡。可以把发型变换到愿意的样子。"/>
+    </imgdir>
+    <imgdir name="5151010">
+      <string name="name" value="豫园染色一般会员卡"/>
+      <string name="desc" value="在豫园美发店可以用一般的会员卡。颜色随机。"/>
+    </imgdir>
+    <imgdir name="5151011">
+      <string name="name" value="豫园染色高级会员卡"/>
+      <string name="desc" value="在豫园美发店可以用高级的会员卡。可以把颜色变换到愿意的样子。"/>
+    </imgdir>
+    <imgdir name="5152016">
+      <string name="name" value="豫园整形手术一般会员卡"/>
+      <string name="desc" value="在豫园整形手术医院可以用一般的会员卡。脸型随机。"/>
+    </imgdir>
+    <imgdir name="5152017">
+      <string name="name" value="豫园整形手术高级会员卡"/>
+      <string name="desc" value="在豫园整形手术医院可以用高级的会员卡。可以把脸变换到愿意的样子。"/>
+    </imgdir>
+    <imgdir name="5153003">
+      <string name="name" value="豫园护肤中心会员卡"/>
+      <string name="desc" value="在豫园护肤中心可以用一次的会员卡。"/>
+    </imgdir>
+    <imgdir name="5310000">
+      <string name="name" value="幸运御守"/>
+      <string name="desc" value="占卜守护幸运星时所需的幸运御守。交给微微安，就可以为您算出今天的守护幸运星喔！"/>
     </imgdir>
 </imgdir>

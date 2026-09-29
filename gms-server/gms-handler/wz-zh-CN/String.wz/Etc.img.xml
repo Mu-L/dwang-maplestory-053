@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="Etc.img" indent="2" media="NONE">
     <imgdir name="Etc">
         <imgdir name="4000000">
@@ -11118,5 +11118,17 @@
             <string name="desc" value="充斥着神秘魔力的魔女硬币"/>
             <string name="name" value="魔女币"/>
         </imgdir>
+    </imgdir>
+    <imgdir name="4101000">
+      <string name="name" value="스페셜 쿠폰 1일권"/>
+      <string name="desc" value="#c가지고 있으면 몬스터로부터 얻는 경험치가 2배#가 된다. 얻은 순간부터 1일동안 유효하며 여러 개의 스페셜 쿠폰이 있을 경우 동시에 효과가 발동되므로 주의하자."/>
+    </imgdir>
+    <imgdir name="4101001">
+      <string name="name" value="스페셜 쿠폰 3일권"/>
+      <string name="desc" value="#c가지고 있으면 몬스터로부터 얻는 경험치가 2배#가 된다. 얻은 순간부터 3일동안 유효하며 여러 개의 스페셜 쿠폰이 있을 경우 동시에 효과가 발동되므로 주의하자."/>
+    </imgdir>
+    <imgdir name="4101002">
+      <string name="name" value="스페셜 쿠폰 5일권"/>
+      <string name="desc" value="#c가지고 있으면 몬스터로부터 얻는 경험치가 2배#가 된다. 얻은 순간부터 5일동안 유효하며 여러 개의 스페셜 쿠폰이 있을 경우 동시에 효과가 발동되므로 주의하자."/>
     </imgdir>
 </imgdir>

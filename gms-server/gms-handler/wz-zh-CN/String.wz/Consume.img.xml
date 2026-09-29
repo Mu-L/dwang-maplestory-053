@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="Consume.img">
     <imgdir name="2023000">
         <string name="name" value="Sharenian Grounds : Fortitude"/>
@@ -9210,5 +9210,202 @@
     <imgdir name="2430033">
         <string name="desc" value="神奇的北斗卫星指导书。传说是\n由该书封面上的冒险岛勇士昨日\n小睡流传下来的，据说集齐7本\n以后会有意想不到的事情发生，\n是什么呢？蹦下咔啦咔"/>
         <string name="name" value="北斗卫星指导书"/>
+    </imgdir>
+    <imgdir name="2080000">
+      <string name="name" value="蓝喇叭"/>
+      <string name="desc" value="使用后，该地图上的所有人都可以看到."/>
+    </imgdir>
+    <imgdir name="2081000">
+      <string name="name" value="红喇叭"/>
+      <string name="desc" value="使用后，该频道上的所有人都可以看到."/>
+    </imgdir>
+    <imgdir name="2082000">
+      <string name="name" value="高质地喇叭"/>
+      <string name="desc" value="全区的人都听得见角色说的"/>
+    </imgdir>
+    <imgdir name="2090000">
+      <string name="name" value="下雪了"/>
+      <string name="desc" value="在角色所在的地图上下雪30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090001">
+      <string name="name" value="浪漫樱花"/>
+      <string name="desc" value="在角色所在的地图上飘花朵30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090002">
+      <string name="name" value="泡泡飞舞"/>
+      <string name="desc" value="在角色所在的地图上飘皂泡30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090003">
+      <string name="name" value="雪绒花"/>
+      <string name="desc" value="在角色所在的地图上飘雪结晶30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090004">
+      <string name="name" value="飘礼物"/>
+      <string name="desc" value="在角色所在的地图上撒礼物30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090005">
+      <string name="name" value="甜心"/>
+      <string name="desc" value="在角色所在的地图上撒巧克力30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090006">
+      <string name="name" value="花瓣雨"/>
+      <string name="desc" value="在角色所在的地图上撒花粉30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090007">
+      <string name="name" value="棒棒糖"/>
+      <string name="desc" value="在角色所在的地图上下糖果30秒.可以输入想说的内容."/>
+      <string name="msg" value="%s 玩家的消息 : %s"/>
+    </imgdir>
+    <imgdir name="2090008">
+      <string name="name" value="飘枫叶"/>
+      <string name="desc" value="在角色位置的地图上飘枫叶10秒钟。可以输入想说的消息。"/>
+      <string name="msg" value="%s玩家的消息: %s"/>
+    </imgdir>
+    <imgdir name="2090009">
+      <string name="name" value="鞭炮"/>
+      <string name="desc" value="在角色位置的地图上放鞭炮10秒钟。可以输入想说的消息。"/>
+      <string name="msg" value="%s玩家的消息: %s"/>
+    </imgdir>
+    <imgdir name="2090010">
+      <string name="name" value="漂可乐"/>
+      <string name="desc" value="角色所在的地图中，约有30秒时间飘落#c可口可乐#，并可输入所要传达的信息。"/>
+      <string name="msg" value="%s 님의 코카-콜라 : %s"/>
+    </imgdir>
+    <imgdir name="2110000">
+      <string name="name" value="取宠物名"/>
+      <string name="desc" value="可以给宠物取名。与名字一起命令的话，宠物会更顺从.\n例）小狗 坐."/>
+    </imgdir>
+    <imgdir name="2120001">
+      <string name="name" value="新鲜香蕉"/>
+      <string name="desc" value="猴子，黑小猪喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2120002">
+      <string name="name" value="宠物食品"/>
+      <string name="desc" value="小怪猫，黑小猪，恐龙王子，恐龙公主喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2120003">
+      <string name="name" value="骨头"/>
+      <string name="desc" value="褐色小狗，雪犬，黑小猪喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2120004">
+      <string name="name" value="竹"/>
+      <string name="desc" value="熊猫，黑小猪喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2120005">
+      <string name="name" value="鲜鱼"/>
+      <string name="desc" value="褐色小猫，黑色小猫，黑小猪喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2120006">
+      <string name="name" value="绿草"/>
+      <string name="desc" value="粉红兔子，白色兔子，玉兔，黑小猪，圣诞鹿喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2120007">
+      <string name="name" value="新鲜肉"/>
+      <string name="desc" value="小怪猫，黑小猪，恐龙王子，恐龙公主，云豹，小白虎，小白雪人喜欢的饲料.增加亲密度100. 人不能吃."/>
+    </imgdir>
+    <imgdir name="2130000">
+      <null name="name"/>
+      <null name="desc"/>
+      <null name="msg"/>
+      <null name="msgIn"/>
+    </imgdir>
+    <imgdir name="2130001">
+      <string name="name" value="真情告白"/>
+      <string name="desc" value="可以升空的气球.可以输入想说的内容."/>
+      <string name="msg" value="真情告白."/>
+      <string name="msgIn" value="真情告白.(在各列都可以输入）"/>
+    </imgdir>
+    <imgdir name="2130002">
+      <string name="name" value="节日祝贺横幅"/>
+      <string name="desc" value="在天空上能飘的节日祝贺帷幕。可以输入想说的内容."/>
+      <string name="msg" value="玩家的节日祝贺."/>
+      <string name="msgIn" value="请你输入祝贺的话.（在各列都可以输入）"/>
+    </imgdir>
+    <imgdir name="2130003">
+      <string name="name" value="生日祝贺帷幕"/>
+      <string name="desc" value="在天空上能挂的生日祝贺横幅。可以输入想说的内容."/>
+      <string name="msg" value="生日祝贺."/>
+      <string name="msgIn" value="请你输入祝贺的话.（在各列都可以输入）"/>
+    </imgdir>
+    <imgdir name="2140000">
+      <string name="name" value="青铜金币包"/>
+      <string name="desc" value="有少量金币的包子."/>
+    </imgdir>
+    <imgdir name="2140001">
+      <string name="name" value="银色金币包"/>
+      <string name="desc" value="有比较多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140002">
+      <string name="name" value="黄色金币包"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140003">
+      <string name="name" value="抵用卷包100"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140004">
+      <string name="name" value="抵用卷包500"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140005">
+      <string name="name" value="抵用卷包1000"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140006">
+      <string name="name" value="抵用卷包2000"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140007">
+      <string name="name" value="抵用卷包5000"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2140008">
+      <string name="name" value="抵用卷包10000"/>
+      <string name="desc" value="有非常多金币的包子."/>
+    </imgdir>
+    <imgdir name="2150000">
+      <string name="name" value="音乐盒"/>
+      <string name="desc" value="在本人位置的地图上演奏一次祝贺曲。"/>
+      <string name="title" value="祝贺"/>
+      <string name="msg" value="%s 玩家的祝贺演奏"/>
+    </imgdir>
+    <imgdir name="2160000">
+      <string name="name" value="消息"/>
+      <string name="desc" value="可以向离线的玩家发送消息。当对方登陆的时候可以阅读该消息。已阅读的消息就被删除。"/>
+    </imgdir>
+    <imgdir name="2160100">
+      <string name="name" value="请柬"/>
+      <string name="desc" value="可以向自己的新朋好友发送请柬。当对方登陆的时候可以阅读请柬内容。"/>
+    </imgdir>
+    <imgdir name="2170000">
+      <string name="name" value="缩地石"/>
+      <string name="desc" value="记忆5个特定地图后可以随时移动到该地图。游戏区和频道一样的话可以移动到有特定玩家的地方。"/>
+    </imgdir>
+    <imgdir name="2170001">
+      <string name="name" value="可乐翅膀"/>
+      <string name="desc" value="喝下爽口的#c可口可乐#便可#c移动到所记录的地图#。在相同频道内，可移动到#c特定角色所在的地图#。无法前往限制移动的地图或是不同大陆的地图。"/>
+    </imgdir>
+    <imgdir name="2171000">
+      <string name="name" value="高级瞬移之石"/>
+      <string name="desc" value="可在#c岛屿间进行传送的石头#。在相同频道内，可移动到特定角色所在的地图。最多可记录#c10个#地图。无法前往限制移动的地图。"/>
+    </imgdir>
+    <imgdir name="2172000">
+      <string name="name" value="豫园高级瞬移之石"/>
+      <string name="desc" value="可去#c东方神州豫园的石头#。"/>
+    </imgdir>
+    <imgdir name="2172001">
+      <string name="name" value="高级瞬移之石"/>
+      <string name="desc" value="可在#c岛屿间进行传送的石头#。在相同频道内，可移动到特定角色所在的地图。最多可记录#c10个#地图。无法前往限制移动的地图。"/>
+    </imgdir>
+    <imgdir name="2200000">
+      <string name="name" value="道具取名"/>
+      <string name="desc" value="可将自己的名称刻画在游戏装备道具上(1次)，用鼠标双击该道具后，#c放到想要刻下名称的装备道具上#，便可刻印自己的名称。"/>
     </imgdir>
 </imgdir>

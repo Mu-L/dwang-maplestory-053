@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="Eqp.img">
     <imgdir name="Eqp">
         <imgdir name="Accessory">
@@ -1551,6 +1551,9 @@
             <imgdir name="1142165">
                 <string name="name" value="钓鱼王勋章" />
                 <string name="desc" value="钓鱼王勋章" />
+            </imgdir>
+            <imgdir name="1032035">
+              <string name="name" value="枫叶耳环"/>
             </imgdir>
         </imgdir>
         <imgdir name="Cap">
@@ -4313,6 +4316,21 @@
                 <string name="name" value="考古学家帽子" />
                 <string name="desc" value="作为遗物大会参与奖奖品的考古学家帽\n子" />
             </imgdir>
+            <imgdir name="1000024">
+              <string name="name" value="结婚帽"/>
+            </imgdir>
+            <imgdir name="1000028">
+              <string name="name" value="韩国武官帽"/>
+            </imgdir>
+            <imgdir name="1001034">
+              <string name="name" value="结婚帽"/>
+            </imgdir>
+            <imgdir name="1001040">
+              <string name="name" value="宫中侍女帽"/>
+            </imgdir>
+            <imgdir name="1001041">
+              <string name="name" value="医女帽"/>
+            </imgdir>
         </imgdir>
         <imgdir name="Cape">
             <imgdir name="1102000">
@@ -4861,6 +4879,9 @@
             <imgdir name="1102236">
                 <string name="name" value="丘比特的翅膀" />
                 <string name="desc" value="丘比特翅膀会帮助穿戴者在冒险岛世界\n寻找真爱。" />
+            </imgdir>
+            <imgdir name="1102071">
+              <string name="name" value="枫叶披风"/>
             </imgdir>
         </imgdir>
         <imgdir name="Coat">
@@ -14702,6 +14723,24 @@
             <imgdir name="1052234">
                 <string name="name" value="绅士套服" />
             </imgdir>
+            <imgdir name="1050121">
+              <string name="name" value="结婚服"/>
+            </imgdir>
+            <imgdir name="1050122">
+              <string name="name" value="普通结婚服"/>
+            </imgdir>
+            <imgdir name="1050129">
+              <string name="name" value="韩国武官服"/>
+            </imgdir>
+            <imgdir name="1051129">
+              <string name="name" value="结婚服"/>
+            </imgdir>
+            <imgdir name="1051145">
+              <string name="name" value="宫中侍女服"/>
+            </imgdir>
+            <imgdir name="1051146">
+              <string name="name" value="医女服"/>
+            </imgdir>
         </imgdir>
         <imgdir name="Pants">
             <imgdir name="1060000">
@@ -16617,6 +16656,10 @@
             <imgdir name="1112916">
                 <string name="name" value="寂寞单身戒指" />
             </imgdir>
+            <imgdir name="1112804">
+              <string name="name" value="结婚戒指"/>
+              <string name="desc" value="表示夫妻之间爱情的戒指"/>
+            </imgdir>
         </imgdir>
         <imgdir name="Shield">
             <imgdir name="1092000">
@@ -18070,6 +18113,9 @@
             </imgdir>
             <imgdir name="1072437">
                 <string name="name" value="玩具品克缤拖拖" />
+            </imgdir>
+            <imgdir name="1070008">
+              <string name="name" value="韩国武官鞋"/>
             </imgdir>
         </imgdir>
         <imgdir name="Taming">
@@ -22321,6 +22367,18 @@
             <imgdir name="1702251">
                 <string name="name" value="电锯惊魂枪" />
                 <string name="desc" value="散发恐怖气息的枪。可佩戴在#c所有武器\n#上。" />
+            </imgdir>
+            <imgdir name="1332028">
+              <string name="name" value="烈焰之刃"/>
+            </imgdir>
+            <imgdir name="1372013">
+              <string name="name" value="竹杖"/>
+            </imgdir>
+            <imgdir name="1432037">
+              <string name="name" value="枫叶大将棋"/>
+            </imgdir>
+            <imgdir name="1452024">
+              <string name="name" value="绿林弓"/>
             </imgdir>
         </imgdir>
     </imgdir>

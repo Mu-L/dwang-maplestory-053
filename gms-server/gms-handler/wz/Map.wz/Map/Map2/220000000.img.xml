@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <imgdir name="220000000.img">
     <imgdir name="info">
         <int name="version" value="10"/>
@@ -497,6 +497,16 @@
             <int name="cy" value="102"/>
             <int name="rx0" value="-2235"/>
             <int name="rx1" value="-2135"/>
+        </imgdir>
+        <imgdir name="20">
+            <string name="type" value="n"/>
+            <string name="id" value="9300002"/>
+            <int name="x" value="544"/>
+            <int name="y" value="-619"/>
+            <int name="fh" value="53"/>
+            <int name="cy" value="-618"/>
+            <int name="rx0" value="494"/>
+            <int name="rx1" value="594"/>
         </imgdir>
     </imgdir>
     <imgdir name="0">

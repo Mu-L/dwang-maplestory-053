@@ -1,4 +1,4 @@
-# client-dist.txt —— 客户端插件 + 汉化数据 的更新清单（给 tools\sync-client.ps1 读）
+﻿# client-dist.txt —— 客户端插件 + 汉化数据 的更新清单（给 tools\sync-client.ps1 读）
 # 放完/改完文件后记得跑 tools\make-manifest.ps1（它会重算 client-dist.sha256 和下面的统计键）
 #
 # version / tag / notes  : 只用于显示和记录
@@ -7,18 +7,18 @@
 # client_exe_strict      : 1 = 校验不一致就直接拒绝（除非 -Force）；0 = 只警告
 # keep_existing          : 这些文件客户端已有时【自动合并】而不是覆盖（新版结构 + 保留用户改过的值，旧的留 .bak 备份）
 # backup_keep            : 客户端目录 _backup_client 里保留几份历史备份
-version=1.1.8
-tag=client-v1.1.8
+version=1.1.9
+tag=client-v1.1.9
 built=2026-09-29
-notes=数据：任务 8516-8527（财神/屈原/管仲/司马迁/张良，已去活动有效期）+ NPC 9330015 + 4 张地图召唤
+notes=数据：048 网吧/premium 地图 17 张 + 048 物品 157 个 + 红鸾宫入口 NPC 9300000/9300001/9300002 召唤（跳过大擂台、双倍爆率频道、洗点、封印之锁）
 client_exe=GMSv53.exe,MapleStory.exe,GMS053.exe,MapleStoryV053.exe,MapleStory-sorce.exe
 client_exe_strict=0
 keep_existing=config.ini
 backup_keep=5
 client_exe_size=5439488
 client_exe_sha256=f4ac21ac18b6bd6a8ef16077aec2e9727468f578998e917f6679b5fe26ce23d8
-manifest_built=2026-09-29 12:46:32
-file_count=1127
+manifest_built=2026-09-29 19:03:59
+file_count=1188
 plugin_count=6
-data_count=1121
-data_bytes=54663339
+data_count=1182
+data_bytes=56830305
